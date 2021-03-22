@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "gdb",
+            "request": "attach",
+            "name": "Build & Debug",
+            "executable": "${workspaceRoot}\\${workspaceFolderBasename}.elf",
+            "target": "127.0.0.1:23451",
+            "remote": true,
+            "gdbpath": "${execPath}\\..\\..\\devkitpro\\devkitARM\\bin\\arm-none-eabi-gdb.exe",
+            "cwd": "${workspaceRoot}",
+            "preLaunchTask": "build_project",
+        }
+    ]
+}

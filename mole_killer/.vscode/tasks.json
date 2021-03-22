@@ -1,0 +1,19 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build_project",
+            "command": "${execPath}\\..\\..\\..\\msys2_shell.cmd",
+            "type": "shell",
+            "args": [
+                "-c",
+                "DEVKITPRO=/opt/devkitpro DEVKITARM=/opt/devkitpro/devkitARM make clean && DEVKITPRO=/opt/devkitpro DEVKITARM=/opt/devkitpro/devkitARM make && start /opt/desmume/desmume.exe --arm9gdb 23451 ${workspaceFolderBasename}.nds && sleep 1s"
+            ],
+			"options": {
+                "cwd": "${workspaceRoot}",
+            },
+        }
+    ]
+}
