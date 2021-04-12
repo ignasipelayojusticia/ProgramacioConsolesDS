@@ -1,0 +1,1 @@
+mole.o: mole.s
