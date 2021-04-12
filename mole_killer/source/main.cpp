@@ -109,6 +109,7 @@ void step()
 #include <nds.h>
 
 #include <mole.h>
+#include <background.h>
 
 #define FRAMES_PER_ANIMATION 3
 
@@ -220,18 +221,25 @@ int main(void)
 	//-----------------------------------------------------------------
 	// Initialize the graphics engines
 	//-----------------------------------------------------------------
-	videoSetMode(MODE_0_2D);
+	videoSetMode(MODE_5_2D);
 	videoSetModeSub(MODE_0_2D);
 
-	vramSetBankA(VRAM_A_MAIN_SPRITE);
+	vramSetBankA(VRAM_A_MAIN_BG_0x06000000);
 	vramSetBankD(VRAM_D_SUB_SPRITE);
 
 	oamInit(&oamMain, SpriteMapping_1D_128, false);
 	oamInit(&oamSub, SpriteMapping_1D_128, false);
 
+	consoleDemoInit();
+
 	//-----------------------------------------------------------------
 	// Initialize the two sprites
 	//-----------------------------------------------------------------
+	int bg3 = bgInit(3, BgType_Bmp8, BgSize_B8_256x256, 0,0);
+
+	dmaCopy(backgroundBitmap, bgGetGfxPtr(bg3), 256*256);
+	dmaCopy(backgroundPal, BG_PALETTE, 256*2);
+
 	initMan(&man, (u8*)moleTiles);
 	initWoman(&woman, (u8*)moleTiles);
 

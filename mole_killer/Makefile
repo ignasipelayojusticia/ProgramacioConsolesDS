@@ -70,6 +70,8 @@ CPPFILES	:=	$(foreach dir,$(SOURCES),$(notdir $(wildcard $(dir)/*.cpp)))
 SFILES		:=	$(foreach dir,$(SOURCES),$(notdir $(wildcard $(dir)/*.s)))
 BINFILES	:=	$(foreach dir,$(DATA),$(notdir $(wildcard $(dir)/*.*)))
 SPRITE_FILES   :=  $(foreach dir, $(SPRITES),$(notdir $(wildcard $(dir)/*.png)))
+BMP_FILES   :=  $(foreach dir, $(SPRITES),$(notdir $(wildcard $(dir)/*.bmp)))
+
 
 #---------------------------------------------------------------------------------
 # use CXX for linking C++ projects, CC for standard C
@@ -86,6 +88,7 @@ endif
 #---------------------------------------------------------------------------------
 
 export OFILES	:=	$(SPRITE_FILES:.png=.o) \
+				$(BMP_FILES:.bmp=.o) \
 				$(addsuffix .o,$(BINFILES)) \
 			$(CPPFILES:.cpp=.o) $(CFILES:.c=.o) $(SFILES:.s=.o)
  
@@ -119,7 +122,12 @@ $(OUTPUT).elf	:	$(OFILES)
 
 #---------------------------------------------------------------------------------
 %.s %.h : %.png
-	grit $< -ff../sprites/sprite.grit -o$*
+	grit $< -ff../sprites/sprites.grit -o$*
+#---------------------------------------------------------------------------------
+
+#---------------------------------------------------------------------------------
+%.s %.h : %.bmp
+	grit $< -ff../sprites/bitmaps.grit -o$*
 #---------------------------------------------------------------------------------
 
 	
