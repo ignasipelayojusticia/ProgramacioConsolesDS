@@ -222,29 +222,34 @@ int main(void)
 	// Initialize the graphics engines
 	//-----------------------------------------------------------------
 	videoSetMode(MODE_5_2D);
-	videoSetModeSub(MODE_0_2D);
+	videoSetModeSub(MODE_3_2D);
 
+	//vramSetBankA(VRAM_A_MAIN_SPRITE);
+	//vramSetBankC(VRAM_C_SUB_BG);
+	//vramSetPrimaryBanks(VRAM_A_MAIN_BG, VRAM_B_MAIN_SPRITE, VRAM_C_SUB_BG, VRAM_D_SUB_SPRITE);
 	vramSetBankA(VRAM_A_MAIN_BG_0x06000000);
+	vramSetBankB(VRAM_B_MAIN_SPRITE_0x06400000);
+	vramSetBankC(VRAM_C_SUB_BG_0x06200000);
 	vramSetBankD(VRAM_D_SUB_SPRITE);
 
 	oamInit(&oamMain, SpriteMapping_1D_128, false);
 	oamInit(&oamSub, SpriteMapping_1D_128, false);
 
-	consoleDemoInit();
-
 	//-----------------------------------------------------------------
 	// Initialize the two sprites
 	//-----------------------------------------------------------------
-	int bg3 = bgInit(3, BgType_Bmp8, BgSize_B8_256x256, 0,0);
+	//int bg3 = bgInitSub(3, BgType_Bmp16, BgSize_B16_256x256, 0, 0);
+	int bg3 = bgInitSub(3, BgType_Bmp8, BgSize_B8_256x256, 0, 0);
+	dmaCopy(backgroundBitmap, bgGetGfxPtr(bg3), 256*192);
+	dmaCopy(backgroundPal, BG_PALETTE_SUB, 256*2);
 
-	dmaCopy(backgroundBitmap, bgGetGfxPtr(bg3), 256*256);
-	dmaCopy(backgroundPal, BG_PALETTE, 256*2);
-
+	/*
 	initMan(&man, (u8*)moleTiles);
 	initWoman(&woman, (u8*)moleTiles);
 
 	dmaCopy(molePal, SPRITE_PALETTE, 512);
 	dmaCopy(molePal, SPRITE_PALETTE_SUB, 512);
+	*/
 
 	//-----------------------------------------------------------------
 	// main loop
@@ -296,19 +301,23 @@ int main(void)
 
 		}
 
+		/*
 		animateMan(&man);
 		animateWoman(&woman);
+		*/
 
 		//-----------------------------------------------------------------
 		// Set oam attributes, notice the only difference is in the sprite 
 		// graphics memory pointer argument.  The man only has one pointer
 		// while the women has an array of pointers
 		//-----------------------------------------------------------------
+		/*
 		oamSet(&oamMain, 0, man.x, man.y, 0, 0, SpriteSize_32x32, SpriteColorFormat_256Color, 
 			man.sprite_gfx_mem, -1, false, false, false, false, false);
 		
 		oamSet(&oamSub, 0, woman.x, woman.y, 0, 0, SpriteSize_32x32, SpriteColorFormat_256Color, 
 			woman.sprite_gfx_mem[woman.gfx_frame], -1, false, false, false, false, false);
+			*/
 
 		swiWaitForVBlank();
 
