@@ -20,6 +20,9 @@ typedef struct
 
 	int state;
 	int anim_frame;
+
+	float timeToSpawn;
+	float timeOnScreen;
 } Mole;
 
 touchPosition touch;
@@ -70,10 +73,10 @@ void init()
 
 	for(int i = 0; i < MOLES_BUFFER_SIZE; i++)
 	{
-		moles[i] = {35 * i + 10, 50};
+		moles[i] = {(26 + 85 * i) % 256, 60 + 80 * (i / 3)};
 		initMole(&moles[i], (u8*)moleTiles);
 	}
-	//initMole(&mole, (u8*)moleTiles);
+
 	dmaCopy(molePal, SPRITE_PALETTE_SUB, 512);
 }
 
