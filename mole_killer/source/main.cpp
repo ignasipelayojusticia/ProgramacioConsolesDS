@@ -12,6 +12,7 @@ enum {SCREEN_TOP = 0, SCREEN_BOTTOM = 192, SCREEN_LEFT = 0, SCREEN_RIGHT = 256};
 
 typedef struct 
 {
+	int id;
 	int x;
 	int y;
 
@@ -31,7 +32,7 @@ bool playing;
 Mole moles[MOLES_BUFFER_SIZE];
 
 void init();
-void initMole(Mole *mole, u8* gfx);
+void initMole(const int& id, Mole *mole, u8* gfx);
 void animateMole(Mole *mole);
 void checkCollisionWithMole(Mole *mole, touchPosition touch);
 
@@ -73,25 +74,39 @@ void init()
 
 	for(int i = 0; i < MOLES_BUFFER_SIZE; i++)
 	{
-		moles[i] = {(26 + 85 * i) % 256, 60 + 80 * (i / 3)};
-		initMole(&moles[i], (u8*)moleTiles);
+		initMole(i, &moles[i], (u8*)moleTiles);
 	}
 
 	dmaCopy(molePal, SPRITE_PALETTE_SUB, 512);
 }
 
-void initMole(Mole *sprite, u8* gfx)
+void initMole(const int& id, Mole *mole, u8* gfx)
 {
-	sprite->sprite_gfx_mem = oamAllocateGfx(&oamSub, SpriteSize_32x32, SpriteColorFormat_256Color);
-	sprite->frame_gfx = (u8*)gfx;
+	mole->id = id;
+	mole->x = 256; //(26 + 85 * id) % 256;
+	mole->y = 192; //60 + 80 * (id / 3);
+
+	mole->sprite_gfx_mem = oamAllocateGfx(&oamSub, SpriteSize_32x32, SpriteColorFormat_256Color);
+	mole->frame_gfx = (u8*)gfx;
+
+	mole->timeToSpawn = 100 + (rand() & 0xFF);
 }
 
-void animateMole(Mole *sprite)
+void animateMole(Mole *mole)
 {
-	int frame = sprite->anim_frame + sprite->state * FRAMES_PER_ANIMATION;
-    u8* offset = sprite->frame_gfx + frame * 32*32;
+	int frame = mole->anim_frame + mole->state * FRAMES_PER_ANIMATION;
+	u8* offset = mole->frame_gfx + frame * 32*32;
 
-    dmaCopy(offset, sprite->sprite_gfx_mem, 32*32);
+	dmaCopy(offset, mole->sprite_gfx_mem, 32*32);
+	
+	mole->timeToSpawn--;
+	if(mole->timeToSpawn <= 0)
+	{
+		mole->x = (26 + 85 * mole->id) % 256;
+		mole->y = 60 + 80 * (mole->id / 3);
+
+		mole->timeToSpawn = 100 + (rand() & 0xAF);
+	}
 }
 
 
@@ -101,6 +116,7 @@ void checkCollisionWithMole(Mole *mole, touchPosition touch)
 	{
 		mole->x = 256;
 		mole->y = 192;
+
 
 		// Puntuación ++
 	}
