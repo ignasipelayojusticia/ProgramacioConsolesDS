@@ -6,6 +6,7 @@
 #include <background.h>
 
 #define FRAMES_PER_ANIMATION 3
+#define MOLES_BUFFER_SIZE 6
 
 enum {SCREEN_TOP = 0, SCREEN_BOTTOM = 192, SCREEN_LEFT = 0, SCREEN_RIGHT = 256};
 
@@ -23,11 +24,13 @@ typedef struct
 
 touchPosition touch;
 bool playing;
-Mole mole;
+
+Mole moles[MOLES_BUFFER_SIZE];
 
 void init();
 void initMole(Mole *mole, u8* gfx);
 void animateMole(Mole *mole);
+void checkCollisionWithMole(Mole *mole, touchPosition touch);
 
 void quit();
 void step();
@@ -50,8 +53,6 @@ void init()
 {
 	playing = true;
 
-	mole = {0,0};
-
 	videoSetMode(MODE_5_2D);
 	videoSetModeSub(MODE_3_2D);
 
@@ -67,7 +68,12 @@ void init()
 	dmaCopy(backgroundBitmap, bgGetGfxPtr(bg3), 256*192);
 	dmaCopy(backgroundPal, BG_PALETTE_SUB, 256*2);
 
-	initMole(&mole, (u8*)moleTiles);
+	for(int i = 0; i < MOLES_BUFFER_SIZE; i++)
+	{
+		moles[i] = {35 * i + 10, 50};
+		initMole(&moles[i], (u8*)moleTiles);
+	}
+	//initMole(&mole, (u8*)moleTiles);
 	dmaCopy(molePal, SPRITE_PALETTE_SUB, 512);
 }
 
@@ -83,6 +89,18 @@ void animateMole(Mole *sprite)
     u8* offset = sprite->frame_gfx + frame * 32*32;
 
     dmaCopy(offset, sprite->sprite_gfx_mem, 32*32);
+}
+
+
+void checkCollisionWithMole(Mole *mole, touchPosition touch)
+{
+	if(touch.px >= mole->x && touch.px <= mole->x + 32 && touch.py >= mole->y && touch.py <= mole->y + 32)
+	{
+		mole->x = 256;
+		mole->y = 192;
+
+		// Puntuación ++
+	}
 }
 
 void quit()
@@ -101,10 +119,12 @@ void step()
 		return;
 	}
 		
-	animateMole(&mole);
-
-	oamSet(&oamSub, 0, mole.x, mole.y, 0, 0, SpriteSize_32x32, SpriteColorFormat_256Color, 
-		mole.sprite_gfx_mem, -1, false, false, false, false, false);
+	for(int i = 0; i < MOLES_BUFFER_SIZE; i++)
+	{
+		animateMole(&moles[i]);
+		oamSet(&oamSub, i , moles[i].x, moles[i].y, 0, 0, SpriteSize_32x32, SpriteColorFormat_256Color, 
+			moles[i].sprite_gfx_mem, -1, false, false, false, false, false);
+	}
 
 	swiWaitForVBlank();
 
@@ -115,6 +135,11 @@ void step()
 	{
 		touchRead(&touch);
 
+		for(int i = 0; i < MOLES_BUFFER_SIZE; i++)
+		{
+			checkCollisionWithMole(&moles[i], touch);
+		}
+		
 		iprintf("\x1b[10;0Hx = %04i - %04i\n", touch.rawx, touch.px);
 		iprintf("y = %04i - %04i\n", touch.rawy, touch.py);
 	}
