@@ -90,6 +90,7 @@ void initMole(const int& id, Mole *mole, u8* gfx)
 	mole->frame_gfx = (u8*)gfx;
 
 	mole->timeToSpawn = 100 + (rand() & 0xFF);
+	mole->timeOnScreen = -1;
 }
 
 void animateMole(Mole *mole)
@@ -100,12 +101,24 @@ void animateMole(Mole *mole)
 	dmaCopy(offset, mole->sprite_gfx_mem, 32*32);
 	
 	mole->timeToSpawn--;
-	if(mole->timeToSpawn <= 0)
+	if(mole->timeToSpawn <= 0 && mole->timeOnScreen <= 0)
 	{
 		mole->x = (26 + 85 * mole->id) % 256;
 		mole->y = 60 + 80 * (mole->id / 3);
 
-		mole->timeToSpawn = 100 + (rand() & 0xAF);
+		//mole->timeToSpawn = 100 + (rand() & 0xAF);
+		mole->timeOnScreen = 45 + (rand() & 30);
+	}
+	else if(mole->timeToSpawn <= 0)
+	{
+		mole->timeOnScreen--;
+		if(mole->timeOnScreen <= 0)
+		{
+			mole->x = 256;
+			mole->y = 192;
+
+			mole->timeToSpawn = 100 + (rand() & 0xAF);
+		}
 	}
 }
 
