@@ -910,529 +910,528 @@ Linker script and memory map
                 0x0000000002000b00                _init
  .init          0x0000000002000b04        0x8 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/thumb/crtn.o
 
-.text           0x0000000002000b10     0x6b28
+.text           0x0000000002000b10     0x6af0
  *(EXCLUDE_FILE(*.twl* *.vectors* *.itcm*) .text)
- .text          0x0000000002000b10      0x604 main.o
+ .text          0x0000000002000b10      0x5d0 main.o
                 0x0000000002000b10                initScore(int const&, Score*, unsigned char*)
                 0x0000000002000b3c                animateScore(int const&, Score*)
                 0x0000000002000b70                initMole(int const&, Mole*, unsigned char*)
-                0x0000000002000bb4                init()
-                0x0000000002000e1c                animateMole(Mole*)
-                0x0000000002000ef8                checkCollisionWithMole(Mole*, touchPosition)
+                0x0000000002000bd0                init()
+                0x0000000002000e34                animateMole(Mole*)
+                0x0000000002000ee4                checkCollisionWithMole(Mole*, touchPosition)
                 0x0000000002000f38                quit()
                 0x0000000002000f3c                step()
- .text          0x0000000002001114      0x150 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/thumb\libgcc.a(_divsi3.o)
-                0x0000000002001114                __divsi3
-                0x0000000002001114                __aeabi_idiv
-                0x0000000002001244                __aeabi_idivmod
- .text          0x0000000002001264        0x4 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/thumb\libgcc.a(_dvmd_tls.o)
-                0x0000000002001264                __aeabi_idiv0
-                0x0000000002001264                __aeabi_ldiv0
- .text          0x0000000002001268      0x2ac c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/thumb\libgcc.a(_arm_addsubsf3.o)
-                0x0000000002001268                __aeabi_frsub
-                0x0000000002001270                __subsf3
-                0x0000000002001270                __aeabi_fsub
-                0x0000000002001274                __aeabi_fadd
-                0x0000000002001274                __addsf3
-                0x0000000002001430                __aeabi_ui2f
-                0x0000000002001430                __floatunsisf
-                0x0000000002001438                __aeabi_i2f
-                0x0000000002001438                __floatsisf
-                0x0000000002001458                __aeabi_ul2f
-                0x0000000002001458                __floatundisf
-                0x0000000002001468                __aeabi_l2f
-                0x0000000002001468                __floatdisf
- .text          0x0000000002001514      0x114 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/thumb\libgcc.a(_arm_cmpsf2.o)
-                0x0000000002001514                __gesf2
-                0x0000000002001514                __gtsf2
-                0x000000000200151c                __lesf2
-                0x000000000200151c                __ltsf2
-                0x0000000002001524                __nesf2
-                0x0000000002001524                __eqsf2
-                0x0000000002001524                __cmpsf2
-                0x0000000002001588                __aeabi_cfrcmple
-                0x0000000002001598                __aeabi_cfcmpeq
-                0x0000000002001598                __aeabi_cfcmple
-                0x00000000020015b0                __aeabi_fcmpeq
-                0x00000000020015c8                __aeabi_fcmplt
-                0x00000000020015e0                __aeabi_fcmple
-                0x00000000020015f8                __aeabi_fcmpge
-                0x0000000002001610                __aeabi_fcmpgt
- .text          0x0000000002001628       0x14 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/thumb\libgcc.a(_thumb1_case_uqi.o)
-                0x0000000002001628                __gnu_thumb1_case_uqi
- .text          0x000000000200163c       0x14 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/thumb\libgcc.a(_thumb1_case_uhi.o)
-                0x000000000200163c                __gnu_thumb1_case_uhi
- .text          0x0000000002001650       0x3c c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/thumb\libgcc.a(_aeabi_uldivmod.o)
-                0x0000000002001650                __aeabi_uldivmod
- .text          0x000000000200168c       0x28 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/thumb\libgcc.a(_clzdi2.o)
-                0x000000000200168c                __clzdi2
- .text          0x00000000020016b4       0x48 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/thumb\libgcc.a(_clzsi2.o)
-                0x00000000020016b4                __clzsi2
+ .text          0x00000000020010e0      0x150 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/thumb\libgcc.a(_divsi3.o)
+                0x00000000020010e0                __divsi3
+                0x00000000020010e0                __aeabi_idiv
+                0x0000000002001210                __aeabi_idivmod
+ .text          0x0000000002001230        0x4 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/thumb\libgcc.a(_dvmd_tls.o)
+                0x0000000002001230                __aeabi_idiv0
+                0x0000000002001230                __aeabi_ldiv0
+ .text          0x0000000002001234      0x2ac c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/thumb\libgcc.a(_arm_addsubsf3.o)
+                0x0000000002001234                __aeabi_frsub
+                0x000000000200123c                __subsf3
+                0x000000000200123c                __aeabi_fsub
+                0x0000000002001240                __aeabi_fadd
+                0x0000000002001240                __addsf3
+                0x00000000020013fc                __aeabi_ui2f
+                0x00000000020013fc                __floatunsisf
+                0x0000000002001404                __aeabi_i2f
+                0x0000000002001404                __floatsisf
+                0x0000000002001424                __aeabi_ul2f
+                0x0000000002001424                __floatundisf
+                0x0000000002001434                __aeabi_l2f
+                0x0000000002001434                __floatdisf
+ .text          0x00000000020014e0      0x114 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/thumb\libgcc.a(_arm_cmpsf2.o)
+                0x00000000020014e0                __gesf2
+                0x00000000020014e0                __gtsf2
+                0x00000000020014e8                __lesf2
+                0x00000000020014e8                __ltsf2
+                0x00000000020014f0                __nesf2
+                0x00000000020014f0                __eqsf2
+                0x00000000020014f0                __cmpsf2
+                0x0000000002001554                __aeabi_cfrcmple
+                0x0000000002001564                __aeabi_cfcmpeq
+                0x0000000002001564                __aeabi_cfcmple
+                0x000000000200157c                __aeabi_fcmpeq
+                0x0000000002001594                __aeabi_fcmplt
+                0x00000000020015ac                __aeabi_fcmple
+                0x00000000020015c4                __aeabi_fcmpge
+                0x00000000020015dc                __aeabi_fcmpgt
+ .text          0x00000000020015f4       0x14 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/thumb\libgcc.a(_thumb1_case_uqi.o)
+                0x00000000020015f4                __gnu_thumb1_case_uqi
+ .text          0x0000000002001608       0x14 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/thumb\libgcc.a(_thumb1_case_uhi.o)
+                0x0000000002001608                __gnu_thumb1_case_uhi
+ .text          0x000000000200161c       0x3c c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/thumb\libgcc.a(_aeabi_uldivmod.o)
+                0x000000000200161c                __aeabi_uldivmod
+ .text          0x0000000002001658       0x28 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/thumb\libgcc.a(_clzdi2.o)
+                0x0000000002001658                __clzdi2
+ .text          0x0000000002001680       0x48 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/thumb\libgcc.a(_clzsi2.o)
+                0x0000000002001680                __clzsi2
  *(EXCLUDE_FILE(*.twl* *.vectors* *.itcm*) .stub)
  *(EXCLUDE_FILE(*.twl* *.vectors* *.itcm*) .text.*)
  .text.deregister_tm_clones
-                0x00000000020016fc       0x2c c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/thumb/crtbegin.o
+                0x00000000020016c8       0x2c c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/thumb/crtbegin.o
  .text.register_tm_clones
-                0x0000000002001728       0x34 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/thumb/crtbegin.o
+                0x00000000020016f4       0x34 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/thumb/crtbegin.o
  .text.__do_global_dtors_aux
-                0x000000000200175c       0x30 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/thumb/crtbegin.o
+                0x0000000002001728       0x30 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/thumb/crtbegin.o
  .text.frame_dummy
-                0x000000000200178c       0x28 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/thumb/crtbegin.o
- .text.startup  0x00000000020017b4       0x20 main.o
-                0x00000000020017b4                main
+                0x0000000002001758       0x28 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/thumb/crtbegin.o
+ .text.startup  0x0000000002001780       0x20 main.o
+                0x0000000002001780                main
  .text.checkIfText.part.0
-                0x00000000020017d4       0x40 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(background.o)
+                0x00000000020017a0       0x40 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(background.o)
  .text.bgUpdate
-                0x0000000002001814      0x104 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(background.o)
-                0x0000000002001814                bgUpdate
+                0x00000000020017e0      0x104 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(background.o)
+                0x00000000020017e0                bgUpdate
  .text.bgInit_call
-                0x0000000002001918      0x110 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(background.o)
-                0x0000000002001918                bgInit_call
+                0x00000000020018e4      0x110 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(background.o)
+                0x00000000020018e4                bgInit_call
  .text.bgInitSub_call
-                0x0000000002001a28       0xf4 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(background.o)
-                0x0000000002001a28                bgInitSub_call
+                0x00000000020019f4       0xf4 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(background.o)
+                0x00000000020019f4                bgInitSub_call
  .text.touchRead
-                0x0000000002001b1c       0x24 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(touch.o)
-                0x0000000002001b1c                touchRead
+                0x0000000002001ae8       0x24 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(touch.o)
+                0x0000000002001ae8                touchRead
  .text.getAllocHeader
-                0x0000000002001b40       0x28 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(sprite_alloc.o)
+                0x0000000002001b0c       0x28 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(sprite_alloc.o)
  .text.oamAllocReset
-                0x0000000002001b68       0x1c C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(sprite_alloc.o)
-                0x0000000002001b68                oamAllocReset
+                0x0000000002001b34       0x1c C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(sprite_alloc.o)
+                0x0000000002001b34                oamAllocReset
  .text.oamAllocateGfx
-                0x0000000002001b84      0x224 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(sprite_alloc.o)
-                0x0000000002001b84                oamAllocateGfx
+                0x0000000002001b50      0x224 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(sprite_alloc.o)
+                0x0000000002001b50                oamAllocateGfx
  .text.sinLutLookup
-                0x0000000002001da8       0x3c C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(trig.o)
-                0x0000000002001da8                sinLutLookup
- .text.sinLerp  0x0000000002001de4       0x44 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(trig.o)
-                0x0000000002001de4                sinLerp
- .text.cosLerp  0x0000000002001e28       0x14 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(trig.o)
-                0x0000000002001e28                cosLerp
- .text.oamInit  0x0000000002001e3c      0x11c C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(sprite.o)
-                0x0000000002001e3c                oamInit
+                0x0000000002001d74       0x3c C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(trig.o)
+                0x0000000002001d74                sinLutLookup
+ .text.sinLerp  0x0000000002001db0       0x44 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(trig.o)
+                0x0000000002001db0                sinLerp
+ .text.cosLerp  0x0000000002001df4       0x14 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(trig.o)
+                0x0000000002001df4                cosLerp
+ .text.oamInit  0x0000000002001e08      0x11c C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(sprite.o)
+                0x0000000002001e08                oamInit
  .text.oamGetGfxPtr
-                0x0000000002001f58       0x38 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(sprite.o)
-                0x0000000002001f58                oamGetGfxPtr
+                0x0000000002001f24       0x38 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(sprite.o)
+                0x0000000002001f24                oamGetGfxPtr
  .text.oamGfxPtrToOffset
-                0x0000000002001f90       0x34 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(sprite.o)
-                0x0000000002001f90                oamGfxPtrToOffset
- .text.oamSet   0x0000000002001fc4      0x148 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(sprite.o)
-                0x0000000002001fc4                oamSet
+                0x0000000002001f5c       0x34 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(sprite.o)
+                0x0000000002001f5c                oamGfxPtrToOffset
+ .text.oamSet   0x0000000002001f90      0x148 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(sprite.o)
+                0x0000000002001f90                oamSet
  .text.oamUpdate
-                0x000000000200210c       0x60 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(sprite.o)
-                0x000000000200210c                oamUpdate
+                0x00000000020020d8       0x60 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(sprite.o)
+                0x00000000020020d8                oamUpdate
  .text.scanKeys
-                0x000000000200216c       0x8c C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(keys.o)
-                0x000000000200216c                scanKeys
+                0x0000000002002138       0x8c C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(keys.o)
+                0x0000000002002138                scanKeys
  .text.keysHeld
-                0x00000000020021f8        0xc C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(keys.o)
-                0x00000000020021f8                keysHeld
+                0x00000000020021c4        0xc C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(keys.o)
+                0x00000000020021c4                keysHeld
  .text.initSystem
-                0x0000000002002204      0x198 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(initSystem.o)
-                0x0000000002002204                initSystem
+                0x00000000020021d0      0x198 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(initSystem.o)
+                0x00000000020021d0                initSystem
  .text.__libnds_gtod
-                0x000000000200239c       0x28 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(timeSupport.o)
-                0x000000000200239c                __libnds_gtod
+                0x0000000002002368       0x28 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(timeSupport.o)
+                0x0000000002002368                __libnds_gtod
  .text.irqDummy
-                0x00000000020023c4        0x4 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(interrupts.o)
-                0x00000000020023c4                irqDummy
- .text.irqSet   0x00000000020023c8       0x6c C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(interrupts.o)
-                0x00000000020023c8                irqSet
- .text.irqInit  0x0000000002002434       0x50 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(interrupts.o)
-                0x0000000002002434                irqInit
+                0x0000000002002390        0x4 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(interrupts.o)
+                0x0000000002002390                irqDummy
+ .text.irqSet   0x0000000002002394       0x6c C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(interrupts.o)
+                0x0000000002002394                irqSet
+ .text.irqInit  0x0000000002002400       0x50 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(interrupts.o)
+                0x0000000002002400                irqInit
  .text.irqEnable
-                0x0000000002002484       0x64 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(interrupts.o)
-                0x0000000002002484                irqEnable
+                0x0000000002002450       0x64 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(interrupts.o)
+                0x0000000002002450                irqEnable
  .text.systemErrorExit
-                0x00000000020024e8        0x4 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(libnds_exit.arm.o)
-                0x00000000020024e8                systemErrorExit
- *fill*         0x00000000020024ec        0x4 ff
+                0x00000000020024b4        0x4 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(libnds_exit.arm.o)
+                0x00000000020024b4                systemErrorExit
  .text.__libnds_exit
-                0x00000000020024f0       0x5c C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(libnds_exit.arm.o)
-                0x00000000020024f0                __libnds_exit
+                0x00000000020024b8       0x5c C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(libnds_exit.arm.o)
+                0x00000000020024b8                __libnds_exit
  .text.fifo_waitBlock
-                0x000000000200254c       0x80 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(fifosystem.o)
+                0x0000000002002514       0x80 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(fifosystem.o)
  .text.fifo_queueBlock
-                0x00000000020025cc       0x40 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(fifosystem.o)
+                0x0000000002002594       0x40 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(fifosystem.o)
  .text.fifoInternalSendInterrupt
-                0x000000000200260c       0xac C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(fifosystem.o)
+                0x00000000020025d4       0xac C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(fifosystem.o)
  .text.fifoInternalSend.part.2
-                0x00000000020026b8       0xd4 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(fifosystem.o)
+                0x0000000002002680       0xd4 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(fifosystem.o)
  .text.fifoGetValue32.part.3
-                0x000000000200278c       0x74 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(fifosystem.o)
+                0x0000000002002754       0x74 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(fifosystem.o)
  .text.fifoSetValue32Handler
-                0x0000000002002800       0x78 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(fifosystem.o)
-                0x0000000002002800                fifoSetValue32Handler
+                0x00000000020027c8       0x78 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(fifosystem.o)
+                0x00000000020027c8                fifoSetValue32Handler
  .text.fifoSendValue32
-                0x0000000002002878       0x4c C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(fifosystem.o)
-                0x0000000002002878                fifoSendValue32
+                0x0000000002002840       0x4c C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(fifosystem.o)
+                0x0000000002002840                fifoSendValue32
  .text.fifoGetDatamsg
-                0x00000000020028c4      0x138 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(fifosystem.o)
-                0x00000000020028c4                fifoGetDatamsg
+                0x000000000200288c      0x138 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(fifosystem.o)
+                0x000000000200288c                fifoGetDatamsg
  .text.fifoInternalRecvInterrupt
-                0x00000000020029fc      0x3dc C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(fifosystem.o)
+                0x00000000020029c4      0x3dc C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(fifosystem.o)
  .text.fifoSetDatamsgHandler
-                0x0000000002002dd8       0x9c C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(fifosystem.o)
-                0x0000000002002dd8                fifoSetDatamsgHandler
+                0x0000000002002da0       0x9c C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(fifosystem.o)
+                0x0000000002002da0                fifoSetDatamsgHandler
  .text.fifoInit
-                0x0000000002002e74      0x104 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(fifosystem.o)
-                0x0000000002002e74                fifoInit
+                0x0000000002002e3c      0x104 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(fifosystem.o)
+                0x0000000002002e3c                fifoInit
  .text.DC_FlushRange
-                0x0000000002002f78       0x24 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(dcache.o)
-                0x0000000002002f78                DC_FlushRange
+                0x0000000002002f40       0x24 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(dcache.o)
+                0x0000000002002f40                DC_FlushRange
  .text.__libnds_mpu_setup
-                0x0000000002002f9c      0x174 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(mpu_setup.o)
-                0x0000000002002f9c                __libnds_mpu_setup
+                0x0000000002002f64      0x174 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(mpu_setup.o)
+                0x0000000002002f64                __libnds_mpu_setup
  .text.memUncached
-                0x0000000002003110       0x20 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(mpu_setup.o)
-                0x0000000002003110                memUncached
+                0x00000000020030d8       0x20 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(mpu_setup.o)
+                0x00000000020030d8                memUncached
  .text.swiWaitForVBlank
-                0x0000000002003130        0x8 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(IntrWait.o)
-                0x0000000002003130                swiWaitForVBlank
+                0x00000000020030f8        0x8 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(IntrWait.o)
+                0x00000000020030f8                swiWaitForVBlank
  .text.swiIntrWait
-                0x0000000002003138       0x70 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(IntrWait.o)
-                0x0000000002003138                swiIntrWait
+                0x0000000002003100       0x70 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(IntrWait.o)
+                0x0000000002003100                swiIntrWait
  .text.setCpuClock
-                0x00000000020031a8       0x50 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(cpu_clock.o)
-                0x00000000020031a8                setCpuClock
+                0x0000000002003170       0x50 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(cpu_clock.o)
+                0x0000000002003170                setCpuClock
  .text.swiSoftReset
-                0x00000000020031f8       0x2c C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(swiSoftReset.o)
-                0x00000000020031f8                swiSoftReset
+                0x00000000020031c0       0x2c C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(swiSoftReset.o)
+                0x00000000020031c0                swiSoftReset
  .text.vramDefault
-                0x0000000002003224       0xd0 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(video.o)
-                0x0000000002003224                vramDefault
+                0x00000000020031ec       0xd0 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(video.o)
+                0x00000000020031ec                vramDefault
  .text.systemValueHandler
-                0x00000000020032f4       0x48 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(system.o)
-                0x00000000020032f4                systemValueHandler
+                0x00000000020032bc       0x48 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(system.o)
+                0x00000000020032bc                systemValueHandler
  .text.systemMsgHandler
-                0x000000000200333c       0x5c C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(system.o)
-                0x000000000200333c                systemMsgHandler
- .text.powerOn  0x0000000002003398       0x2c C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(system.o)
-                0x0000000002003398                powerOn
+                0x0000000002003304       0x5c C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(system.o)
+                0x0000000002003304                systemMsgHandler
+ .text.powerOn  0x0000000002003360       0x2c C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(system.o)
+                0x0000000002003360                powerOn
  .text.swiDelay
-                0x00000000020033c4        0x4 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(biosCalls.o)
-                0x00000000020033c4                swiDelay
+                0x000000000200338c        0x4 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(biosCalls.o)
+                0x000000000200338c                swiDelay
  .text.__libc_init_array
-                0x00000000020033c8       0x50 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-init.o)
-                0x00000000020033c8                __libc_init_array
- .text.iprintf  0x0000000002003418       0x24 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-iprintf.o)
-                0x0000000002003418                iprintf
- .text.malloc   0x000000000200343c       0x14 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-malloc.o)
-                0x000000000200343c                malloc
- .text.free     0x0000000002003450       0x14 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-malloc.o)
-                0x0000000002003450                free
+                0x0000000002003390       0x50 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-init.o)
+                0x0000000002003390                __libc_init_array
+ .text.iprintf  0x00000000020033e0       0x24 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-iprintf.o)
+                0x00000000020033e0                iprintf
+ .text.malloc   0x0000000002003404       0x14 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-malloc.o)
+                0x0000000002003404                malloc
+ .text.free     0x0000000002003418       0x14 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-malloc.o)
+                0x0000000002003418                free
  .text._malloc_r
-                0x0000000002003464      0x594 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-mallocr.o)
-                0x0000000002003464                _malloc_r
- .text.memcpy   0x00000000020039f8       0xac c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-memcpy-stub.o)
-                0x00000000020039f8                memcpy
- .text.memset   0x0000000002003aa4       0xb0 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-memset.o)
-                0x0000000002003aa4                memset
+                0x000000000200342c      0x594 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-mallocr.o)
+                0x000000000200342c                _malloc_r
+ .text.memcpy   0x00000000020039c0       0xac c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-memcpy-stub.o)
+                0x00000000020039c0                memcpy
+ .text.memset   0x0000000002003a6c       0xb0 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-memset.o)
+                0x0000000002003a6c                memset
  .text.__malloc_lock
-                0x0000000002003b54       0x14 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-mlock.o)
-                0x0000000002003b54                __malloc_lock
+                0x0000000002003b1c       0x14 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-mlock.o)
+                0x0000000002003b1c                __malloc_lock
  .text.__malloc_unlock
-                0x0000000002003b68       0x14 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-mlock.o)
-                0x0000000002003b68                __malloc_unlock
- .text.rand     0x0000000002003b7c       0x34 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-rand.o)
-                0x0000000002003b7c                rand
- .text.realloc  0x0000000002003bb0       0x18 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-realloc.o)
-                0x0000000002003bb0                realloc
+                0x0000000002003b30       0x14 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-mlock.o)
+                0x0000000002003b30                __malloc_unlock
+ .text.rand     0x0000000002003b44       0x34 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-rand.o)
+                0x0000000002003b44                rand
+ .text.realloc  0x0000000002003b78       0x18 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-realloc.o)
+                0x0000000002003b78                realloc
  .text._realloc_r
-                0x0000000002003bc8      0x370 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-reallocr.o)
-                0x0000000002003bc8                _realloc_r
- .text.get_arg  0x0000000002003f38      0x3c0 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-vfiprintf.o)
+                0x0000000002003b90      0x370 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-reallocr.o)
+                0x0000000002003b90                _realloc_r
+ .text.get_arg  0x0000000002003f00      0x3c0 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-vfiprintf.o)
  .text.__sprint_r
-                0x00000000020042f8       0x20 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-vfiprintf.o)
-                0x00000000020042f8                __sprint_r
+                0x00000000020042c0       0x20 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-vfiprintf.o)
+                0x00000000020042c0                __sprint_r
  .text._vfiprintf_r
-                0x0000000002004318     0x17e8 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-vfiprintf.o)
-                0x0000000002004318                _vfiprintf_r
+                0x00000000020042e0     0x17e8 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-vfiprintf.o)
+                0x00000000020042e0                _vfiprintf_r
  .text.__sbprintf
-                0x0000000002005b00       0x8c c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-vfiprintf.o)
+                0x0000000002005ac8       0x8c c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-vfiprintf.o)
  .text._wcrtomb_r
-                0x0000000002005b8c       0x5c c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-wcrtomb.o)
-                0x0000000002005b8c                _wcrtomb_r
+                0x0000000002005b54       0x5c c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-wcrtomb.o)
+                0x0000000002005b54                _wcrtomb_r
  .text._wcsrtombs_r
-                0x0000000002005be8       0x1c c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-wcsrtombs.o)
-                0x0000000002005be8                _wcsrtombs_r
+                0x0000000002005bb0       0x1c c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-wcsrtombs.o)
+                0x0000000002005bb0                _wcsrtombs_r
  .text.__swsetup_r
-                0x0000000002005c04       0xe0 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-wsetup.o)
-                0x0000000002005c04                __swsetup_r
+                0x0000000002005bcc       0xe0 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-wsetup.o)
+                0x0000000002005bcc                __swsetup_r
  .text.__sflush_r
-                0x0000000002005ce4      0x1b8 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-fflush.o)
-                0x0000000002005ce4                __sflush_r
+                0x0000000002005cac      0x1b8 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-fflush.o)
+                0x0000000002005cac                __sflush_r
  .text._fflush_r
-                0x0000000002005e9c       0x70 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-fflush.o)
-                0x0000000002005e9c                _fflush_r
- .text.std      0x0000000002005f0c       0x54 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-findfp.o)
+                0x0000000002005e64       0x70 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-fflush.o)
+                0x0000000002005e64                _fflush_r
+ .text.std      0x0000000002005ed4       0x54 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-findfp.o)
  .text._cleanup_r
-                0x0000000002005f60       0x14 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-findfp.o)
-                0x0000000002005f60                _cleanup_r
- .text.__sinit  0x0000000002005f74       0x64 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-findfp.o)
-                0x0000000002005f74                __sinit
+                0x0000000002005f28       0x14 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-findfp.o)
+                0x0000000002005f28                _cleanup_r
+ .text.__sinit  0x0000000002005f3c       0x64 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-findfp.o)
+                0x0000000002005f3c                __sinit
  .text.__sfp_lock_acquire
-                0x0000000002005fd8       0x14 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-findfp.o)
-                0x0000000002005fd8                __sfp_lock_acquire
+                0x0000000002005fa0       0x14 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-findfp.o)
+                0x0000000002005fa0                __sfp_lock_acquire
  .text.__sfp_lock_release
-                0x0000000002005fec       0x14 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-findfp.o)
-                0x0000000002005fec                __sfp_lock_release
+                0x0000000002005fb4       0x14 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-findfp.o)
+                0x0000000002005fb4                __sfp_lock_release
  .text._malloc_trim_r
-                0x0000000002006000       0xa4 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-freer.o)
-                0x0000000002006000                _malloc_trim_r
- .text._free_r  0x00000000020060a4      0x1e0 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-freer.o)
-                0x00000000020060a4                _free_r
+                0x0000000002005fc8       0xa4 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-freer.o)
+                0x0000000002005fc8                _malloc_trim_r
+ .text._free_r  0x000000000200606c      0x1e0 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-freer.o)
+                0x000000000200606c                _free_r
  .text.__sfvwrite_r
-                0x0000000002006284      0x348 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-fvwrite.o)
-                0x0000000002006284                __sfvwrite_r
+                0x000000000200624c      0x348 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-fvwrite.o)
+                0x000000000200624c                __sfvwrite_r
  .text._fwalk_reent
-                0x00000000020065cc       0x54 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-fwalk.o)
-                0x00000000020065cc                _fwalk_reent
+                0x0000000002006594       0x54 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-fwalk.o)
+                0x0000000002006594                _fwalk_reent
  .text._localeconv_r
-                0x0000000002006620        0x8 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-localeconv.o)
-                0x0000000002006620                _localeconv_r
+                0x00000000020065e8        0x8 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-localeconv.o)
+                0x00000000020065e8                _localeconv_r
  .text.__locale_mb_cur_max
-                0x0000000002006628       0x10 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-locale.o)
-                0x0000000002006628                __locale_mb_cur_max
+                0x00000000020065f0       0x10 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-locale.o)
+                0x00000000020065f0                __locale_mb_cur_max
  .text.__swhatbuf_r
-                0x0000000002006638       0x64 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-makebuf.o)
-                0x0000000002006638                __swhatbuf_r
+                0x0000000002006600       0x64 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-makebuf.o)
+                0x0000000002006600                __swhatbuf_r
  .text.__smakebuf_r
-                0x000000000200669c       0x98 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-makebuf.o)
-                0x000000000200669c                __smakebuf_r
+                0x0000000002006664       0x98 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-makebuf.o)
+                0x0000000002006664                __smakebuf_r
  .text.__utf8_mbtowc
-                0x0000000002006734      0x294 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-mbtowc_r.o)
-                0x0000000002006734                __utf8_mbtowc
- .text.memchr   0x00000000020069c8       0x84 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-memchr-stub.o)
-                0x00000000020069c8                memchr
- .text.memmove  0x0000000002006a4c       0xb4 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-memmove.o)
-                0x0000000002006a4c                memmove
- .text.__sread  0x0000000002006b00       0x34 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-stdio.o)
-                0x0000000002006b00                __sread
+                0x00000000020066fc      0x294 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-mbtowc_r.o)
+                0x00000000020066fc                __utf8_mbtowc
+ .text.memchr   0x0000000002006990       0x84 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-memchr-stub.o)
+                0x0000000002006990                memchr
+ .text.memmove  0x0000000002006a14       0xb4 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-memmove.o)
+                0x0000000002006a14                memmove
+ .text.__sread  0x0000000002006ac8       0x34 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-stdio.o)
+                0x0000000002006ac8                __sread
  .text.__swrite
-                0x0000000002006b34       0x4c c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-stdio.o)
-                0x0000000002006b34                __swrite
- .text.__sseek  0x0000000002006b80       0x40 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-stdio.o)
-                0x0000000002006b80                __sseek
+                0x0000000002006afc       0x4c c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-stdio.o)
+                0x0000000002006afc                __swrite
+ .text.__sseek  0x0000000002006b48       0x40 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-stdio.o)
+                0x0000000002006b48                __sseek
  .text.__sclose
-                0x0000000002006bc0       0x10 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-stdio.o)
-                0x0000000002006bc0                __sclose
- .text.strlen   0x0000000002006bd0       0x6c c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-strlen-stub.o)
-                0x0000000002006bd0                strlen
- .text.strncpy  0x0000000002006c3c       0x84 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-strncpy.o)
-                0x0000000002006c3c                strncpy
+                0x0000000002006b88       0x10 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-stdio.o)
+                0x0000000002006b88                __sclose
+ .text.strlen   0x0000000002006b98       0x6c c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-strlen-stub.o)
+                0x0000000002006b98                strlen
+ .text.strncpy  0x0000000002006c04       0x84 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-strncpy.o)
+                0x0000000002006c04                strncpy
  .text._wcsnrtombs_l
-                0x0000000002006cc0      0x134 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-wcsnrtombs.o)
-                0x0000000002006cc0                _wcsnrtombs_l
+                0x0000000002006c88      0x134 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-wcsnrtombs.o)
+                0x0000000002006c88                _wcsnrtombs_l
  .text._wcsnrtombs_r
-                0x0000000002006df4       0x30 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-wcsnrtombs.o)
-                0x0000000002006df4                _wcsnrtombs_r
+                0x0000000002006dbc       0x30 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-wcsnrtombs.o)
+                0x0000000002006dbc                _wcsnrtombs_r
  .text.__utf8_wctomb
-                0x0000000002006e24       0xbc c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-wctomb_r.o)
-                0x0000000002006e24                __utf8_wctomb
+                0x0000000002006dec       0xbc c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-wctomb_r.o)
+                0x0000000002006dec                __utf8_wctomb
  .text._fclose_r
-                0x0000000002006ee0       0xe4 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-fclose.o)
-                0x0000000002006ee0                _fclose_r
+                0x0000000002006ea8       0xe4 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-fclose.o)
+                0x0000000002006ea8                _fclose_r
  .text._close_r
-                0x0000000002006fc4       0x5c c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(close.o)
-                0x0000000002006fc4                _close_r
+                0x0000000002006f8c       0x5c c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(close.o)
+                0x0000000002006f8c                _close_r
  .text._fstat_r
-                0x0000000002007020       0x4c c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(fstat.o)
-                0x0000000002007020                _fstat_r
+                0x0000000002006fe8       0x4c c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(fstat.o)
+                0x0000000002006fe8                _fstat_r
  .text._isatty_r
-                0x000000000200706c        0x4 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(isatty.o)
-                0x000000000200706c                _isatty_r
+                0x0000000002007034        0x4 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(isatty.o)
+                0x0000000002007034                _isatty_r
  .text._lseek_r
-                0x0000000002007070       0x5c c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(lseek.o)
-                0x0000000002007070                _lseek_r
- .text._read_r  0x00000000020070cc       0x50 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(read.o)
-                0x00000000020070cc                _read_r
- .text._sbrk_r  0x000000000200711c       0x54 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(sbrk.o)
-                0x000000000200711c                _sbrk_r
+                0x0000000002007038       0x5c c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(lseek.o)
+                0x0000000002007038                _lseek_r
+ .text._read_r  0x0000000002007094       0x50 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(read.o)
+                0x0000000002007094                _read_r
+ .text._sbrk_r  0x00000000020070e4       0x54 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(sbrk.o)
+                0x00000000020070e4                _sbrk_r
  .text._write_r
-                0x0000000002007170       0x50 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(write.o)
-                0x0000000002007170                _write_r
+                0x0000000002007138       0x50 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(write.o)
+                0x0000000002007138                _write_r
  .text.build_argv
-                0x00000000020071c0       0x4c c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(build_argv.o)
-                0x00000000020071c0                build_argv
+                0x0000000002007188       0x4c c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(build_argv.o)
+                0x0000000002007188                build_argv
  .text.__flockfile
-                0x000000000200720c       0x10 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(flock.o)
-                0x000000000200720c                __flockfile
+                0x00000000020071d4       0x10 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(flock.o)
+                0x00000000020071d4                __flockfile
  .text.__funlockfile
-                0x000000000200721c       0x10 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(flock.o)
-                0x000000000200721c                __funlockfile
+                0x00000000020071e4       0x10 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(flock.o)
+                0x00000000020071e4                __funlockfile
  .text.__libc_lock_acquire
-                0x000000000200722c       0x1c c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(syscall_support.o)
-                0x000000000200722c                __libc_lock_acquire
+                0x00000000020071f4       0x1c c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(syscall_support.o)
+                0x00000000020071f4                __libc_lock_acquire
  .text.__libc_lock_release
-                0x0000000002007248       0x1c c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(syscall_support.o)
-                0x0000000002007248                __libc_lock_release
+                0x0000000002007210       0x1c c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(syscall_support.o)
+                0x0000000002007210                __libc_lock_release
  .text.__libc_lock_init_recursive
-                0x0000000002007264       0x1c c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(syscall_support.o)
-                0x0000000002007264                __libc_lock_init_recursive
+                0x000000000200722c       0x1c c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(syscall_support.o)
+                0x000000000200722c                __libc_lock_init_recursive
  .text.__libc_lock_acquire_recursive
-                0x0000000002007280       0x1c c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(syscall_support.o)
-                0x0000000002007280                __libc_lock_acquire_recursive
+                0x0000000002007248       0x1c c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(syscall_support.o)
+                0x0000000002007248                __libc_lock_acquire_recursive
  .text.__libc_lock_release_recursive
-                0x000000000200729c       0x1c c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(syscall_support.o)
-                0x000000000200729c                __libc_lock_release_recursive
+                0x0000000002007264       0x1c c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(syscall_support.o)
+                0x0000000002007264                __libc_lock_release_recursive
  .text.__libc_lock_close_recursive
-                0x00000000020072b8       0x1c c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(syscall_support.o)
-                0x00000000020072b8                __libc_lock_close_recursive
+                0x0000000002007280       0x1c c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(syscall_support.o)
+                0x0000000002007280                __libc_lock_close_recursive
  .text.__release_handle
-                0x00000000020072d4       0x6c c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(handle_manager.o)
-                0x00000000020072d4                __release_handle
+                0x000000000200729c       0x6c c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(handle_manager.o)
+                0x000000000200729c                __release_handle
  .text.__get_handle
-                0x0000000002007340       0x1c c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(handle_manager.o)
-                0x0000000002007340                __get_handle
+                0x0000000002007308       0x1c c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(handle_manager.o)
+                0x0000000002007308                __get_handle
  .text.__getreent
-                0x000000000200735c       0x28 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(getreent.o)
-                0x000000000200735c                __getreent
+                0x0000000002007324       0x28 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(getreent.o)
+                0x0000000002007324                __getreent
  .text.null_write
-                0x0000000002007384        0x4 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(iosupport.o)
+                0x000000000200734c        0x4 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(iosupport.o)
  .text.__muldi3
-                0x0000000002007388       0x60 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/thumb\libgcc.a(_muldi3.o)
-                0x0000000002007388                __muldi3
-                0x0000000002007388                __aeabi_lmul
+                0x0000000002007350       0x60 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/thumb\libgcc.a(_muldi3.o)
+                0x0000000002007350                __muldi3
+                0x0000000002007350                __aeabi_lmul
  .text.__udivmoddi4
-                0x00000000020073e8      0x1a8 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/thumb\libgcc.a(_udivmoddi4.o)
-                0x00000000020073e8                __udivmoddi4
+                0x00000000020073b0      0x1a8 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/thumb\libgcc.a(_udivmoddi4.o)
+                0x00000000020073b0                __udivmoddi4
  .text.__udivmoddi4.__stub
-                0x0000000002007590       0x98 linker stubs
+                0x0000000002007558       0x98 linker stubs
  *(EXCLUDE_FILE(*.twl*) .gnu.warning)
  *(EXCLUDE_FILE(*.twl*) .gnu.linkonce.t*)
  *(.glue_7)
- .glue_7        0x0000000002007638        0x0 linker stubs
+ .glue_7        0x0000000002007600        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x0000000002007638        0x0 linker stubs
-                0x0000000002007638                . = ALIGN (0x4)
+ .glue_7t       0x0000000002007600        0x0 linker stubs
+                0x0000000002007600                . = ALIGN (0x4)
 
-.vfp11_veneer   0x0000000002007638        0x0
- .vfp11_veneer  0x0000000002007638        0x0 linker stubs
+.vfp11_veneer   0x0000000002007600        0x0
+ .vfp11_veneer  0x0000000002007600        0x0 linker stubs
 
-.v4_bx          0x0000000002007638        0x0
- .v4_bx         0x0000000002007638        0x0 linker stubs
+.v4_bx          0x0000000002007600        0x0
+ .v4_bx         0x0000000002007600        0x0 linker stubs
 
-.iplt           0x0000000002007638        0x0
- .iplt          0x0000000002007638        0x0 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb/ds_arm9_crt0.o
+.iplt           0x0000000002007600        0x0
+ .iplt          0x0000000002007600        0x0 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb/ds_arm9_crt0.o
 
-.fini           0x0000000002007638        0xc
+.fini           0x0000000002007600        0xc
  *(.fini)
- .fini          0x0000000002007638        0x4 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/thumb/crti.o
-                0x0000000002007638                _fini
- .fini          0x000000000200763c        0x8 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/thumb/crtn.o
-                0x0000000002007644                __text_end = .
+ .fini          0x0000000002007600        0x4 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/thumb/crti.o
+                0x0000000002007600                _fini
+ .fini          0x0000000002007604        0x8 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/thumb/crtn.o
+                0x000000000200760c                __text_end = .
 
-.rodata         0x0000000002007644    0x1e514
+.rodata         0x000000000200760c    0x1bd14
  *(EXCLUDE_FILE(*.twl*) .rodata)
- .rodata        0x0000000002007644     0x3200 mole.o
-                0x0000000002007644                moleTiles
-                0x000000000200a644                molePal
- .rodata        0x000000000200a844     0x2a00 score.o
-                0x000000000200a844                scoreTiles
-                0x000000000200d044                scorePal
- .rodata        0x000000000200d244     0xc200 background.o
-                0x000000000200d244                backgroundBitmap
-                0x0000000002019244                backgroundPal
- .rodata        0x0000000002019444     0xc200 scoreScreen.o
-                0x0000000002019444                scoreScreenBitmap
-                0x0000000002025444                scoreScreenPal
+ .rodata        0x000000000200760c      0xa00 mole.o
+                0x000000000200760c                moleTiles
+                0x0000000002007e0c                molePal
+ .rodata        0x000000000200800c     0x2a00 score.o
+                0x000000000200800c                scoreTiles
+                0x000000000200a80c                scorePal
+ .rodata        0x000000000200aa0c     0xc200 background.o
+                0x000000000200aa0c                backgroundBitmap
+                0x0000000002016a0c                backgroundPal
+ .rodata        0x0000000002016c0c     0xc200 scoreScreen.o
+                0x0000000002016c0c                scoreScreenBitmap
+                0x0000000002022c0c                scoreScreenPal
  *all.rodata*(*)
  *(EXCLUDE_FILE(*.twl*) .roda)
  *(EXCLUDE_FILE(*.twl*) .rodata.*)
  .rodata.str1.4
-                0x0000000002025644       0x29 main.o
- *fill*         0x000000000202566d        0x3 ff
+                0x0000000002022e0c       0x29 main.o
+ *fill*         0x0000000002022e35        0x3 ff
  .rodata.SIN_LUT
-                0x0000000002025670      0x102 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(trig.o)
-                0x0000000002025670                SIN_LUT
+                0x0000000002022e38      0x102 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(trig.o)
+                0x0000000002022e38                SIN_LUT
  .rodata._vfiprintf_r.str1.1
-                0x0000000002025772       0x29 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-vfiprintf.o)
- *fill*         0x000000000202579b        0x1 ff
+                0x0000000002022f3a       0x29 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-vfiprintf.o)
+ *fill*         0x0000000002022f63        0x1 ff
  .rodata.blanks.7416
-                0x000000000202579c       0x10 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-vfiprintf.o)
+                0x0000000002022f64       0x10 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-vfiprintf.o)
  .rodata.zeroes.7417
-                0x00000000020257ac       0x10 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-vfiprintf.o)
+                0x0000000002022f74       0x10 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-vfiprintf.o)
  .rodata.str1.4
-                0x00000000020257bc       0x48 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-locale.o)
+                0x0000000002022f84       0x48 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-locale.o)
                                          0x4c (size before relaxing)
  .rodata.__action_table
-                0x0000000002025804       0x6c c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-svfiprintf.o)
-                0x0000000002025804                __action_table
+                0x0000000002022fcc       0x6c c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-svfiprintf.o)
+                0x0000000002022fcc                __action_table
  .rodata.__chclass
-                0x0000000002025870      0x100 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-svfiprintf.o)
-                0x0000000002025870                __chclass
+                0x0000000002023038      0x100 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-svfiprintf.o)
+                0x0000000002023038                __chclass
  .rodata.__state_table
-                0x0000000002025970       0x6c c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-svfiprintf.o)
-                0x0000000002025970                __state_table
+                0x0000000002023138       0x6c c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-svfiprintf.o)
+                0x0000000002023138                __state_table
  .rodata._ctype_
-                0x00000000020259dc      0x101 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-ctype_.o)
-                0x00000000020259dc                _ctype_
- *fill*         0x0000000002025add        0x3 ff
+                0x00000000020231a4      0x101 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-ctype_.o)
+                0x00000000020231a4                _ctype_
+ *fill*         0x00000000020232a5        0x3 ff
  .rodata.AddDevice.str1.4
-                0x0000000002025ae0        0x8 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(iosupport.o)
+                0x00000000020232a8        0x8 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(iosupport.o)
  .rodata.dotab_stdnull
-                0x0000000002025ae8       0x70 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(iosupport.o)
-                0x0000000002025ae8                dotab_stdnull
+                0x00000000020232b0       0x70 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(iosupport.o)
+                0x00000000020232b0                dotab_stdnull
  *(EXCLUDE_FILE(*.twl*) .gnu.linkonce.r*)
-                0x0000000002025b58                . = ALIGN (0x4)
+                0x0000000002023320                . = ALIGN (0x4)
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x0000000002025b58                __exidx_start = .
+                0x0000000002023320                __exidx_start = .
 
 ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x0000000002025b58                __exidx_end = .
-                0x0000000002025b58                . = ALIGN (0x4)
-                0x0000000002025b58                PROVIDE (__preinit_array_start = .)
+                0x0000000002023320                __exidx_end = .
+                0x0000000002023320                . = ALIGN (0x4)
+                0x0000000002023320                PROVIDE (__preinit_array_start = .)
 
 .preinit_array
  *(.preinit_array)
-                0x0000000002025b58                PROVIDE (__preinit_array_end = .)
-                0x0000000002025b58                PROVIDE (__init_array_start = .)
+                0x0000000002023320                PROVIDE (__preinit_array_end = .)
+                0x0000000002023320                PROVIDE (__init_array_start = .)
 
-.init_array     0x0000000002025b58        0x4
+.init_array     0x0000000002023320        0x4
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array)
- .init_array    0x0000000002025b58        0x4 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/thumb/crtbegin.o
-                0x0000000002025b5c                PROVIDE (__init_array_end = .)
+ .init_array    0x0000000002023320        0x4 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/thumb/crtbegin.o
+                0x0000000002023324                PROVIDE (__init_array_end = .)
                 [!provide]                        PROVIDE (__fini_array_start = .)
 
-.fini_array     0x0000000002025b5c        0x4
+.fini_array     0x0000000002023324        0x4
  *(.fini_array)
- .fini_array    0x0000000002025b5c        0x4 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/thumb/crtbegin.o
+ .fini_array    0x0000000002023324        0x4 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/thumb/crtbegin.o
  *(SORT_BY_NAME(.fini_array.*))
                 [!provide]                        PROVIDE (__fini_array_end = .)
 
-.ctors          0x0000000002025b60        0x0
+.ctors          0x0000000002023328        0x0
  *crtbegin.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o) .ctors)
  *(SORT_BY_NAME(.ctors.*))
  *(.ctors)
-                0x0000000002025b60                . = ALIGN (0x4)
+                0x0000000002023328                . = ALIGN (0x4)
 
-.dtors          0x0000000002025b60        0x0
+.dtors          0x0000000002023328        0x0
  *crtbegin.o(.dtors)
  *(EXCLUDE_FILE(*crtend.o) .dtors)
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
-                0x0000000002025b60                . = ALIGN (0x4)
+                0x0000000002023328                . = ALIGN (0x4)
 
-.eh_frame       0x0000000002025b60        0x4
+.eh_frame       0x0000000002023328        0x4
  *(.eh_frame)
- .eh_frame      0x0000000002025b60        0x0 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/thumb/crtbegin.o
- .eh_frame      0x0000000002025b60        0x4 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/thumb/crtend.o
-                0x0000000002025b64                . = ALIGN (0x4)
+ .eh_frame      0x0000000002023328        0x0 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/thumb/crtbegin.o
+ .eh_frame      0x0000000002023328        0x4 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/thumb/crtend.o
+                0x000000000202332c                . = ALIGN (0x4)
 
-.rel.dyn        0x0000000002025b64        0x0
- .rel.iplt      0x0000000002025b64        0x0 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb/ds_arm9_crt0.o
+.rel.dyn        0x000000000202332c        0x0
+ .rel.iplt      0x000000000202332c        0x0 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb/ds_arm9_crt0.o
 
 .gcc_except_table
-                0x0000000002025b64        0x0
+                0x000000000202332c        0x0
  *(.gcc_except_table)
-                0x0000000002025b64                . = ALIGN (0x4)
+                0x000000000202332c                . = ALIGN (0x4)
 
 .jcr
  *(.jcr)
@@ -1442,106 +1441,106 @@ ARM.exidx
  *(.got)
  *(.rel.got)
 
-.ewram          0x0000000002025b64        0x0
-                0x0000000002025b64                __ewram_start = ABSOLUTE (.)
+.ewram          0x000000000202332c        0x0
+                0x000000000202332c                __ewram_start = ABSOLUTE (.)
  *(.ewram)
  *ewram.*(.text)
-                0x0000000002025b64                . = ALIGN (0x4)
+                0x000000000202332c                . = ALIGN (0x4)
 
-.data           0x0000000002025b64     0x1b84
-                0x0000000002025b64                __data_start = ABSOLUTE (.)
+.data           0x000000000202332c     0x1b84
+                0x000000000202332c                __data_start = ABSOLUTE (.)
  *(EXCLUDE_FILE(*.twl*) .data)
- .data          0x0000000002025b64       0x28 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(mpu_setup.o)
+ .data          0x000000000202332c       0x28 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(mpu_setup.o)
  *(EXCLUDE_FILE(*.twl*) .data.*)
  .data.bgControl
-                0x0000000002025b8c       0x20 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(background.o)
-                0x0000000002025b8c                bgControl
+                0x0000000002023354       0x20 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(background.o)
+                0x0000000002023354                bgControl
  .data.bgScrollTable
-                0x0000000002025bac       0x20 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(background.o)
-                0x0000000002025bac                bgScrollTable
+                0x0000000002023374       0x20 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(background.o)
+                0x0000000002023374                bgScrollTable
  .data.bgTransform
-                0x0000000002025bcc       0x20 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(background.o)
-                0x0000000002025bcc                bgTransform
- .data.oamMain  0x0000000002025bec       0x18 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(sprite.o)
-                0x0000000002025bec                oamMain
- .data.oamSub   0x0000000002025c04       0x18 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(sprite.o)
-                0x0000000002025c04                oamSub
- .data.count    0x0000000002025c1c        0x1 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(keys.o)
- .data.delay    0x0000000002025c1d        0x1 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(keys.o)
- .data.repeat   0x0000000002025c1e        0x1 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(keys.o)
- *fill*         0x0000000002025c1f        0x1 ff
+                0x0000000002023394       0x20 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(background.o)
+                0x0000000002023394                bgTransform
+ .data.oamMain  0x00000000020233b4       0x18 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(sprite.o)
+                0x00000000020233b4                oamMain
+ .data.oamSub   0x00000000020233cc       0x18 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(sprite.o)
+                0x00000000020233cc                oamSub
+ .data.count    0x00000000020233e4        0x1 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(keys.o)
+ .data.delay    0x00000000020233e5        0x1 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(keys.o)
+ .data.repeat   0x00000000020233e6        0x1 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(keys.o)
+ *fill*         0x00000000020233e7        0x1 ff
  .data.fifo_buffer_free
-                0x0000000002025c20        0x4 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(fifosystem.o)
-                0x0000000002025c20                fifo_buffer_free
+                0x00000000020233e8        0x4 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(fifosystem.o)
+                0x00000000020233e8                fifo_buffer_free
  .data.fifo_freewords
-                0x0000000002025c24        0x4 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(fifosystem.o)
-                0x0000000002025c24                fifo_freewords
+                0x00000000020233ec        0x4 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(fifosystem.o)
+                0x00000000020233ec                fifo_freewords
  .data.fifo_receive_queue
-                0x0000000002025c28        0x4 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(fifosystem.o)
-                0x0000000002025c28                fifo_receive_queue
+                0x00000000020233f0        0x4 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(fifosystem.o)
+                0x00000000020233f0                fifo_receive_queue
  .data.fifo_send_queue
-                0x0000000002025c2c        0x4 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(fifosystem.o)
-                0x0000000002025c2c                fifo_send_queue
+                0x00000000020233f4        0x4 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(fifosystem.o)
+                0x00000000020233f4                fifo_send_queue
  .data.__malloc_av_
-                0x0000000002025c30      0x408 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-mallocr.o)
-                0x0000000002025c30                __malloc_av_
+                0x00000000020233f8      0x408 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-mallocr.o)
+                0x00000000020233f8                __malloc_av_
  .data.__malloc_sbrk_base
-                0x0000000002026038        0x4 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-mallocr.o)
-                0x0000000002026038                __malloc_sbrk_base
+                0x0000000002023800        0x4 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-mallocr.o)
+                0x0000000002023800                __malloc_sbrk_base
  .data.__malloc_trim_threshold
-                0x000000000202603c        0x4 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-mallocr.o)
-                0x000000000202603c                __malloc_trim_threshold
+                0x0000000002023804        0x4 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-mallocr.o)
+                0x0000000002023804                __malloc_trim_threshold
  .data.__malloc_recursive_mutex
-                0x0000000002026040        0xc c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-mlock.o)
+                0x0000000002023808        0xc c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-mlock.o)
  .data.__sfp_recursive_mutex
-                0x000000000202604c        0xc c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-findfp.o)
+                0x0000000002023814        0xc c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-findfp.o)
  .data.__sinit_recursive_mutex
-                0x0000000002026058        0xc c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-findfp.o)
+                0x0000000002023820        0xc c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-findfp.o)
  .data._impure_ptr
-                0x0000000002026064        0x4 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-impure.o)
-                0x0000000002026064                _impure_ptr
+                0x000000000202382c        0x4 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-impure.o)
+                0x000000000202382c                _impure_ptr
  .data.impure_data
-                0x0000000002026068      0x460 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-impure.o)
+                0x0000000002023830      0x460 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-impure.o)
  .data.__global_locale
-                0x00000000020264c8      0x16c c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-locale.o)
-                0x00000000020264c8                __global_locale
+                0x0000000002023c90      0x16c c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-locale.o)
+                0x0000000002023c90                __global_locale
  .data.__hndl_lock
-                0x0000000002026634        0x4 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(handle_manager.o)
+                0x0000000002023dfc        0x4 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(handle_manager.o)
  .data.__stderr_handle
-                0x0000000002026638        0xc c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(handle_manager.o)
+                0x0000000002023e00        0xc c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(handle_manager.o)
  .data.__stdin_handle
-                0x0000000002026644        0xc c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(handle_manager.o)
+                0x0000000002023e0c        0xc c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(handle_manager.o)
  .data.__stdout_handle
-                0x0000000002026650        0xc c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(handle_manager.o)
- .data.handles  0x000000000202665c     0x1000 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(handle_manager.o)
+                0x0000000002023e18        0xc c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(handle_manager.o)
+ .data.handles  0x0000000002023e24     0x1000 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(handle_manager.o)
  .data.devoptab_list
-                0x000000000202765c       0x8c c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(iosupport.o)
-                0x000000000202765c                devoptab_list
+                0x0000000002024e24       0x8c c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(iosupport.o)
+                0x0000000002024e24                devoptab_list
  *(EXCLUDE_FILE(*.twl*) .gnu.linkonce.d*)
-                0x00000000020276e8                . = ALIGN (0x4)
-                0x00000000020276e8                __data_end = ABSOLUTE (.)
-                0x00000000020276e8                __bss_vma = .
+                0x0000000002024eb0                . = ALIGN (0x4)
+                0x0000000002024eb0                __data_end = ABSOLUTE (.)
+                0x0000000002024eb0                __bss_vma = .
 
-.igot.plt       0x00000000020276e8        0x0
- .igot.plt      0x00000000020276e8        0x0 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb/ds_arm9_crt0.o
+.igot.plt       0x0000000002024eb0        0x0
+ .igot.plt      0x0000000002024eb0        0x0 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb/ds_arm9_crt0.o
 
 .tm_clone_table
-                0x00000000020276e8        0x0
+                0x0000000002024eb0        0x0
  .tm_clone_table
-                0x00000000020276e8        0x0 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/thumb/crtbegin.o
+                0x0000000002024eb0        0x0 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/thumb/crtbegin.o
  .tm_clone_table
-                0x00000000020276e8        0x0 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/thumb/crtend.o
+                0x0000000002024eb0        0x0 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/thumb/crtend.o
 
-.dtcm           0x000000000b000000        0x0 load address 0x00000000020276e8
-                0x00000000020276e8                __dtcm_lma = LOADADDR (.dtcm)
+.dtcm           0x000000000b000000        0x0 load address 0x0000000002024eb0
+                0x0000000002024eb0                __dtcm_lma = LOADADDR (.dtcm)
                 0x000000000b000000                __dtcm_start = ABSOLUTE (.)
  *(.dtcm)
  *(.dtcm.*)
                 0x000000000b000000                . = ALIGN (0x4)
                 0x000000000b000000                __dtcm_end = ABSOLUTE (.)
 
-.itcm           0x0000000001000100      0x194 load address 0x00000000020276e8
-                0x00000000020276e8                __itcm_lma = LOADADDR (.itcm)
+.itcm           0x0000000001000100      0x194 load address 0x0000000002024eb0
+                0x0000000002024eb0                __itcm_lma = LOADADDR (.itcm)
                 0x0000000001000100                __itcm_start = ABSOLUTE (.)
  *(.itcm)
  .itcm          0x0000000001000100       0xc8 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(interrupts.o)
@@ -1552,8 +1551,8 @@ ARM.exidx
                 0x0000000001000294                . = ALIGN (0x4)
                 0x0000000001000294                __itcm_end = ABSOLUTE (.)
 
-.vectors        0x0000000001000000        0x0 load address 0x000000000202787c
-                0x000000000202787c                __vectors_lma = LOADADDR (.vectors)
+.vectors        0x0000000001000000        0x0 load address 0x0000000002025044
+                0x0000000002025044                __vectors_lma = LOADADDR (.vectors)
                 0x0000000001000000                __vectors_start = ABSOLUTE (.)
  *(.vectors .vectors.*)
                 0x0000000001000000                . = ALIGN (0x4)
@@ -1566,86 +1565,87 @@ ARM.exidx
                 0x000000000b000000                . = ALIGN (0x4)
                 0x000000000b000000                __sbss_end = ABSOLUTE (.)
 
-.bss            0x00000000020276e8     0x1558
-                0x00000000020276e8                __bss_start = ABSOLUTE (.)
-                0x00000000020276e8                __bss_start__ = ABSOLUTE (.)
+.bss            0x0000000002024eb0     0x1544
+                0x0000000002024eb0                __bss_start = ABSOLUTE (.)
+                0x0000000002024eb0                __bss_start__ = ABSOLUTE (.)
  *(EXCLUDE_FILE(*.twl*) .dynbss)
  *(EXCLUDE_FILE(*.twl*) .gnu.linkonce.b*)
  *(EXCLUDE_FILE(*.twl*) .bss*)
  .bss.completed.9044
-                0x00000000020276e8        0x1 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/thumb/crtbegin.o
- *fill*         0x00000000020276e9        0x3 
+                0x0000000002024eb0        0x1 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/thumb/crtbegin.o
+ *fill*         0x0000000002024eb1        0x3 
  .bss.object.9049
-                0x00000000020276ec       0x18 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/thumb/crtbegin.o
- .bss           0x0000000002027704      0x114 main.o
-                0x0000000002027704                playing
-                0x0000000002027708                score
-                0x000000000202770c                scores
-                0x0000000002027734                touch
-                0x0000000002027740                moles
- .bss.keys      0x0000000002027818        0x2 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(keys.o)
- .bss.keysold   0x000000000202781a        0x2 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(keys.o)
+                0x0000000002024eb4       0x18 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/thumb/crtbegin.o
+ .bss           0x0000000002024ecc      0x100 main.o
+                0x0000000002024ecc                playing
+                0x0000000002024ed0                score
+                0x0000000002024ed4                scores
+                0x0000000002024efc                touch
+                0x0000000002024f08                moles
+                0x0000000002024fc8                hundreds
+ .bss.keys      0x0000000002024fcc        0x2 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(keys.o)
+ .bss.keysold   0x0000000002024fce        0x2 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(keys.o)
  .bss.keysrepeat
-                0x000000000202781c        0x2 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(keys.o)
- *fill*         0x000000000202781e        0x2 
+                0x0000000002024fd0        0x2 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(keys.o)
+ *fill*         0x0000000002024fd2        0x2 
  .bss.processing
-                0x0000000002027820        0x4 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(fifosystem.o)
-                0x0000000002027820                processing
+                0x0000000002024fd4        0x4 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(fifosystem.o)
+                0x0000000002024fd4                processing
  .bss.SDcallback
-                0x0000000002027824        0x4 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(system.o)
+                0x0000000002024fd8        0x4 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(system.o)
  .bss.__malloc_current_mallinfo
-                0x0000000002027828       0x28 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-mallocr.o)
-                0x0000000002027828                __malloc_current_mallinfo
+                0x0000000002024fdc       0x28 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-mallocr.o)
+                0x0000000002024fdc                __malloc_current_mallinfo
  .bss.__malloc_max_sbrked_mem
-                0x0000000002027850        0x4 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-mallocr.o)
-                0x0000000002027850                __malloc_max_sbrked_mem
+                0x0000000002025004        0x4 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-mallocr.o)
+                0x0000000002025004                __malloc_max_sbrked_mem
  .bss.__malloc_max_total_mem
-                0x0000000002027854        0x4 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-mallocr.o)
-                0x0000000002027854                __malloc_max_total_mem
+                0x0000000002025008        0x4 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-mallocr.o)
+                0x0000000002025008                __malloc_max_total_mem
  .bss.__malloc_top_pad
-                0x0000000002027858        0x4 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-mallocr.o)
-                0x0000000002027858                __malloc_top_pad
+                0x000000000202500c        0x4 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libg.a(lib_a-mallocr.o)
+                0x000000000202500c                __malloc_top_pad
  .bss.heap_start.6107
-                0x000000000202785c        0x4 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(sbrk.o)
+                0x0000000002025010        0x4 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(sbrk.o)
  .bss.fake_heap_end
-                0x0000000002027860        0x4 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(malloc_vars.o)
-                0x0000000002027860                fake_heap_end
+                0x0000000002025014        0x4 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(malloc_vars.o)
+                0x0000000002025014                fake_heap_end
  .bss.fake_heap_start
-                0x0000000002027864        0x4 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(malloc_vars.o)
-                0x0000000002027864                fake_heap_start
+                0x0000000002025018        0x4 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(malloc_vars.o)
+                0x0000000002025018                fake_heap_start
  .bss.__syscalls
-                0x0000000002027868       0x48 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(syscall_support.o)
-                0x0000000002027868                __syscalls
+                0x000000000202501c       0x48 c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/../../../../arm-none-eabi/lib/thumb\libsysbase.a(syscall_support.o)
+                0x000000000202501c                __syscalls
  *(EXCLUDE_FILE(*.twl*) COMMON)
- COMMON         0x00000000020278b0      0x148 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(background.o)
-                0x00000000020278b0                bgState
-                0x00000000020279f0                bgIsTextLut
- COMMON         0x00000000020279f8      0x800 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(sprite.o)
-                0x00000000020279f8                OamMemorySub
-                0x0000000002027df8                OamMemory
- COMMON         0x00000000020281f8        0x1 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(initSystem.o)
-                0x00000000020281f8                __dsimode
- *fill*         0x00000000020281f9        0x3 
- COMMON         0x00000000020281fc        0x4 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(timeSupport.o)
-                0x00000000020281fc                punixTime
- COMMON         0x0000000002028200      0xa40 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(fifosystem.o)
-                0x0000000002028200                fifo_datamsg_data
-                0x0000000002028240                fifo_buffer
-                0x0000000002028a40                fifo_value32_func
-                0x0000000002028a80                fifo_address_func
-                0x0000000002028ac0                fifo_value32_data
-                0x0000000002028b00                fifo_value32_queue
-                0x0000000002028b40                fifo_data_queue
-                0x0000000002028b80                fifo_address_data
-                0x0000000002028bc0                fifo_datamsg_func
-                0x0000000002028c00                fifo_address_queue
-                0x0000000002028c40                . = ALIGN (0x4)
-                0x0000000002028c40                __bss_end__ = ABSOLUTE (.)
-                0x0000000002028c40                __end__ = ABSOLUTE (.)
+ COMMON         0x0000000002025064      0x148 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(background.o)
+                0x0000000002025064                bgState
+                0x00000000020251a4                bgIsTextLut
+ COMMON         0x00000000020251ac      0x800 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(sprite.o)
+                0x00000000020251ac                OamMemorySub
+                0x00000000020255ac                OamMemory
+ COMMON         0x00000000020259ac        0x1 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(initSystem.o)
+                0x00000000020259ac                __dsimode
+ *fill*         0x00000000020259ad        0x3 
+ COMMON         0x00000000020259b0        0x4 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(timeSupport.o)
+                0x00000000020259b0                punixTime
+ COMMON         0x00000000020259b4      0xa40 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(fifosystem.o)
+                0x00000000020259b4                fifo_datamsg_data
+                0x00000000020259f4                fifo_buffer
+                0x00000000020261f4                fifo_value32_func
+                0x0000000002026234                fifo_address_func
+                0x0000000002026274                fifo_value32_data
+                0x00000000020262b4                fifo_value32_queue
+                0x00000000020262f4                fifo_data_queue
+                0x0000000002026334                fifo_address_data
+                0x0000000002026374                fifo_datamsg_func
+                0x00000000020263b4                fifo_address_queue
+                0x00000000020263f4                . = ALIGN (0x4)
+                0x00000000020263f4                __bss_end__ = ABSOLUTE (.)
+                0x00000000020263f4                __end__ = ABSOLUTE (.)
 
-.twl            0x0000000002028c40        0x0 load address 0x0000000002400000
+.twl            0x00000000020263f4        0x0 load address 0x0000000002400000
                 0x0000000002400000                __arm9i_lma__ = LOADADDR (.twl)
-                0x0000000002028c40                __arm9i_start__ = ABSOLUTE (.)
+                0x00000000020263f4                __arm9i_start__ = ABSOLUTE (.)
  *(.twl)
  *.twl*(.text .stub .text.* .gnu.linkonce.t.*)
  *.twl*(.rodata)
@@ -1654,18 +1654,18 @@ ARM.exidx
  *.twl*(.data)
  *.twl*(.data.*)
  *.twl*(.gnu.linkonce.d*)
-                0x0000000002028c40                __arm9i_end__ = ABSOLUTE (.)
+                0x00000000020263f4                __arm9i_end__ = ABSOLUTE (.)
 
-.twl_bss        0x0000000002028c40        0x0
-                0x0000000002028c40                __twl_bss_start__ = ABSOLUTE (.)
+.twl_bss        0x00000000020263f4        0x0
+                0x00000000020263f4                __twl_bss_start__ = ABSOLUTE (.)
  *(.twl_bss)
  *.twl*(.dynbss)
  *.twl*(.gnu.linkonce.b*)
  *.twl*(.bss*)
  *.twl*(COMMON)
-                0x0000000002028c40                . = ALIGN (0x4)
-                0x0000000002028c40                __twl_bss_end__ = ABSOLUTE (.)
-                0x0000000002028c40                __twl_end__ = ABSOLUTE (.)
+                0x00000000020263f4                . = ALIGN (0x4)
+                0x00000000020263f4                __twl_bss_end__ = ABSOLUTE (.)
+                0x00000000020263f4                __twl_end__ = ABSOLUTE (.)
 
 .stab
  *(.stab)
@@ -2002,161 +2002,161 @@ ARM.exidx
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x0000000000000000    0x1210b
+.debug_info     0x0000000000000000    0x120dc
  *(.debug_info)
- .debug_info    0x0000000000000000     0x31ed main.o
- .debug_info    0x00000000000031ed     0x1424 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(background.o)
- .debug_info    0x0000000000004611      0xd37 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(touch.o)
- .debug_info    0x0000000000005348     0x1b96 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(sprite_alloc.o)
- .debug_info    0x0000000000006ede      0xf1f C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(trig.o)
- .debug_info    0x0000000000007dfd     0x1786 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(sprite.o)
- .debug_info    0x0000000000009583      0xe17 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(keys.o)
- .debug_info    0x000000000000a39a     0x1f13 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(initSystem.o)
- .debug_info    0x000000000000c2ad      0xab7 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(timeSupport.o)
- .debug_info    0x000000000000cd64       0x59 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(securearea.o)
- .debug_info    0x000000000000cdbd      0x735 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(interrupts.o)
- .debug_info    0x000000000000d4f2      0xd29 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(libnds_exit.arm.o)
- .debug_info    0x000000000000e21b     0x2197 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(fifosystem.o)
- .debug_info    0x00000000000103b2       0x22 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(dcache.o)
- .debug_info    0x00000000000103d4       0x22 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(mpu_setup.o)
- .debug_info    0x00000000000103f6       0x22 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(IntrWait.o)
- .debug_info    0x0000000000010418       0x26 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(cpu_clock.o)
- .debug_info    0x000000000001043e       0x26 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(interruptDispatcher.o)
- .debug_info    0x0000000000010464       0x26 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(swiSoftReset.o)
- .debug_info    0x000000000001048a      0x7dd C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(video.o)
- .debug_info    0x0000000000010c67     0x1482 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(system.o)
- .debug_info    0x00000000000120e9       0x22 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(biosCalls.o)
+ .debug_info    0x0000000000000000     0x31be main.o
+ .debug_info    0x00000000000031be     0x1424 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(background.o)
+ .debug_info    0x00000000000045e2      0xd37 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(touch.o)
+ .debug_info    0x0000000000005319     0x1b96 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(sprite_alloc.o)
+ .debug_info    0x0000000000006eaf      0xf1f C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(trig.o)
+ .debug_info    0x0000000000007dce     0x1786 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(sprite.o)
+ .debug_info    0x0000000000009554      0xe17 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(keys.o)
+ .debug_info    0x000000000000a36b     0x1f13 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(initSystem.o)
+ .debug_info    0x000000000000c27e      0xab7 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(timeSupport.o)
+ .debug_info    0x000000000000cd35       0x59 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(securearea.o)
+ .debug_info    0x000000000000cd8e      0x735 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(interrupts.o)
+ .debug_info    0x000000000000d4c3      0xd29 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(libnds_exit.arm.o)
+ .debug_info    0x000000000000e1ec     0x2197 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(fifosystem.o)
+ .debug_info    0x0000000000010383       0x22 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(dcache.o)
+ .debug_info    0x00000000000103a5       0x22 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(mpu_setup.o)
+ .debug_info    0x00000000000103c7       0x22 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(IntrWait.o)
+ .debug_info    0x00000000000103e9       0x26 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(cpu_clock.o)
+ .debug_info    0x000000000001040f       0x26 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(interruptDispatcher.o)
+ .debug_info    0x0000000000010435       0x26 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(swiSoftReset.o)
+ .debug_info    0x000000000001045b      0x7dd C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(video.o)
+ .debug_info    0x0000000000010c38     0x1482 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(system.o)
+ .debug_info    0x00000000000120ba       0x22 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(biosCalls.o)
 
-.debug_abbrev   0x0000000000000000     0x33b0
+.debug_abbrev   0x0000000000000000     0x33c4
  *(.debug_abbrev)
- .debug_abbrev  0x0000000000000000      0x6ad main.o
- .debug_abbrev  0x00000000000006ad      0x416 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(background.o)
- .debug_abbrev  0x0000000000000ac3      0x26e C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(touch.o)
- .debug_abbrev  0x0000000000000d31      0x414 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(sprite_alloc.o)
- .debug_abbrev  0x0000000000001145      0x373 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(trig.o)
- .debug_abbrev  0x00000000000014b8      0x428 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(sprite.o)
- .debug_abbrev  0x00000000000018e0      0x2c8 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(keys.o)
- .debug_abbrev  0x0000000000001ba8      0x3af C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(initSystem.o)
- .debug_abbrev  0x0000000000001f57      0x20b C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(timeSupport.o)
- .debug_abbrev  0x0000000000002162       0x47 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(securearea.o)
- .debug_abbrev  0x00000000000021a9      0x2f7 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(interrupts.o)
- .debug_abbrev  0x00000000000024a0      0x2d0 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(libnds_exit.arm.o)
- .debug_abbrev  0x0000000000002770      0x59b C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(fifosystem.o)
- .debug_abbrev  0x0000000000002d0b       0x12 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(dcache.o)
- .debug_abbrev  0x0000000000002d1d       0x12 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(mpu_setup.o)
- .debug_abbrev  0x0000000000002d2f       0x12 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(IntrWait.o)
- .debug_abbrev  0x0000000000002d41       0x14 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(cpu_clock.o)
- .debug_abbrev  0x0000000000002d55       0x14 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(interruptDispatcher.o)
- .debug_abbrev  0x0000000000002d69       0x14 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(swiSoftReset.o)
- .debug_abbrev  0x0000000000002d7d      0x254 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(video.o)
- .debug_abbrev  0x0000000000002fd1      0x3cd C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(system.o)
- .debug_abbrev  0x000000000000339e       0x12 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(biosCalls.o)
+ .debug_abbrev  0x0000000000000000      0x6c1 main.o
+ .debug_abbrev  0x00000000000006c1      0x416 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(background.o)
+ .debug_abbrev  0x0000000000000ad7      0x26e C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(touch.o)
+ .debug_abbrev  0x0000000000000d45      0x414 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(sprite_alloc.o)
+ .debug_abbrev  0x0000000000001159      0x373 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(trig.o)
+ .debug_abbrev  0x00000000000014cc      0x428 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(sprite.o)
+ .debug_abbrev  0x00000000000018f4      0x2c8 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(keys.o)
+ .debug_abbrev  0x0000000000001bbc      0x3af C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(initSystem.o)
+ .debug_abbrev  0x0000000000001f6b      0x20b C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(timeSupport.o)
+ .debug_abbrev  0x0000000000002176       0x47 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(securearea.o)
+ .debug_abbrev  0x00000000000021bd      0x2f7 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(interrupts.o)
+ .debug_abbrev  0x00000000000024b4      0x2d0 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(libnds_exit.arm.o)
+ .debug_abbrev  0x0000000000002784      0x59b C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(fifosystem.o)
+ .debug_abbrev  0x0000000000002d1f       0x12 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(dcache.o)
+ .debug_abbrev  0x0000000000002d31       0x12 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(mpu_setup.o)
+ .debug_abbrev  0x0000000000002d43       0x12 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(IntrWait.o)
+ .debug_abbrev  0x0000000000002d55       0x14 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(cpu_clock.o)
+ .debug_abbrev  0x0000000000002d69       0x14 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(interruptDispatcher.o)
+ .debug_abbrev  0x0000000000002d7d       0x14 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(swiSoftReset.o)
+ .debug_abbrev  0x0000000000002d91      0x254 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(video.o)
+ .debug_abbrev  0x0000000000002fe5      0x3cd C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(system.o)
+ .debug_abbrev  0x00000000000033b2       0x12 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(biosCalls.o)
 
-.debug_line     0x0000000000000000     0x6a82
+.debug_line     0x0000000000000000     0x6a15
  *(.debug_line)
- .debug_line    0x0000000000000000      0xfe6 main.o
- .debug_line    0x0000000000000fe6      0x6e4 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(background.o)
- .debug_line    0x00000000000016ca      0x3d6 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(touch.o)
- .debug_line    0x0000000000001aa0      0x821 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(sprite_alloc.o)
- .debug_line    0x00000000000022c1      0x6ac C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(trig.o)
- .debug_line    0x000000000000296d      0x7e8 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(sprite.o)
- .debug_line    0x0000000000003155      0x43c C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(keys.o)
- .debug_line    0x0000000000003591      0x57f C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(initSystem.o)
- .debug_line    0x0000000000003b10      0x21b C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(timeSupport.o)
- .debug_line    0x0000000000003d2b       0x82 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(securearea.o)
- .debug_line    0x0000000000003dad      0x53b C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(interrupts.o)
- .debug_line    0x00000000000042e8      0x2d0 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(libnds_exit.arm.o)
- .debug_line    0x00000000000045b8     0x140d C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(fifosystem.o)
- .debug_line    0x00000000000059c5       0xd3 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(dcache.o)
- .debug_line    0x0000000000005a98      0x12f C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(mpu_setup.o)
- .debug_line    0x0000000000005bc7       0xba C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(IntrWait.o)
- .debug_line    0x0000000000005c81       0xa3 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(cpu_clock.o)
- .debug_line    0x0000000000005d24       0xcc C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(interruptDispatcher.o)
- .debug_line    0x0000000000005df0       0x9c C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(swiSoftReset.o)
- .debug_line    0x0000000000005e8c      0x4aa C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(video.o)
- .debug_line    0x0000000000006336      0x55a C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(system.o)
- .debug_line    0x0000000000006890      0x1f2 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(biosCalls.o)
+ .debug_line    0x0000000000000000      0xf79 main.o
+ .debug_line    0x0000000000000f79      0x6e4 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(background.o)
+ .debug_line    0x000000000000165d      0x3d6 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(touch.o)
+ .debug_line    0x0000000000001a33      0x821 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(sprite_alloc.o)
+ .debug_line    0x0000000000002254      0x6ac C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(trig.o)
+ .debug_line    0x0000000000002900      0x7e8 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(sprite.o)
+ .debug_line    0x00000000000030e8      0x43c C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(keys.o)
+ .debug_line    0x0000000000003524      0x57f C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(initSystem.o)
+ .debug_line    0x0000000000003aa3      0x21b C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(timeSupport.o)
+ .debug_line    0x0000000000003cbe       0x82 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(securearea.o)
+ .debug_line    0x0000000000003d40      0x53b C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(interrupts.o)
+ .debug_line    0x000000000000427b      0x2d0 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(libnds_exit.arm.o)
+ .debug_line    0x000000000000454b     0x140d C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(fifosystem.o)
+ .debug_line    0x0000000000005958       0xd3 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(dcache.o)
+ .debug_line    0x0000000000005a2b      0x12f C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(mpu_setup.o)
+ .debug_line    0x0000000000005b5a       0xba C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(IntrWait.o)
+ .debug_line    0x0000000000005c14       0xa3 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(cpu_clock.o)
+ .debug_line    0x0000000000005cb7       0xcc C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(interruptDispatcher.o)
+ .debug_line    0x0000000000005d83       0x9c C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(swiSoftReset.o)
+ .debug_line    0x0000000000005e1f      0x4aa C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(video.o)
+ .debug_line    0x00000000000062c9      0x55a C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(system.o)
+ .debug_line    0x0000000000006823      0x1f2 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(biosCalls.o)
 
-.debug_frame    0x0000000000000000      0xaa0
+.debug_frame    0x0000000000000000      0xaa8
  *(.debug_frame)
- .debug_frame   0x0000000000000000      0x10c main.o
- .debug_frame   0x000000000000010c       0xcc C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(background.o)
- .debug_frame   0x00000000000001d8       0x3c C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(touch.o)
- .debug_frame   0x0000000000000214       0xb4 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(sprite_alloc.o)
- .debug_frame   0x00000000000002c8       0xd0 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(trig.o)
- .debug_frame   0x0000000000000398       0xf4 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(sprite.o)
- .debug_frame   0x000000000000048c       0x8c C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(keys.o)
- .debug_frame   0x0000000000000518       0x28 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(initSystem.o)
- .debug_frame   0x0000000000000540       0x28 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(timeSupport.o)
- .debug_frame   0x0000000000000568       0xa4 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(interrupts.o)
- .debug_frame   0x000000000000060c       0x3c C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(libnds_exit.arm.o)
- .debug_frame   0x0000000000000648      0x2a8 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(fifosystem.o)
- .debug_frame   0x00000000000008f0       0xb8 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(video.o)
- .debug_frame   0x00000000000009a8       0xf8 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(system.o)
+ .debug_frame   0x0000000000000000      0x114 main.o
+ .debug_frame   0x0000000000000114       0xcc C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(background.o)
+ .debug_frame   0x00000000000001e0       0x3c C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(touch.o)
+ .debug_frame   0x000000000000021c       0xb4 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(sprite_alloc.o)
+ .debug_frame   0x00000000000002d0       0xd0 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(trig.o)
+ .debug_frame   0x00000000000003a0       0xf4 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(sprite.o)
+ .debug_frame   0x0000000000000494       0x8c C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(keys.o)
+ .debug_frame   0x0000000000000520       0x28 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(initSystem.o)
+ .debug_frame   0x0000000000000548       0x28 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(timeSupport.o)
+ .debug_frame   0x0000000000000570       0xa4 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(interrupts.o)
+ .debug_frame   0x0000000000000614       0x3c C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(libnds_exit.arm.o)
+ .debug_frame   0x0000000000000650      0x2a8 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(fifosystem.o)
+ .debug_frame   0x00000000000008f8       0xb8 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(video.o)
+ .debug_frame   0x00000000000009b0       0xf8 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(system.o)
 
-.debug_str      0x0000000000000000     0x3ea6
+.debug_str      0x0000000000000000     0x3eaf
  *(.debug_str)
- .debug_str     0x0000000000000000     0x1abe main.o
-                                       0x1ce4 (size before relaxing)
- .debug_str     0x0000000000001abe      0x39f C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(background.o)
+ .debug_str     0x0000000000000000     0x1ac7 main.o
+                                       0x1ce7 (size before relaxing)
+ .debug_str     0x0000000000001ac7      0x39f C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(background.o)
                                         0xbba (size before relaxing)
- .debug_str     0x0000000000001e5d      0x143 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(touch.o)
+ .debug_str     0x0000000000001e66      0x143 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(touch.o)
                                         0x7e2 (size before relaxing)
- .debug_str     0x0000000000001fa0      0x149 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(sprite_alloc.o)
+ .debug_str     0x0000000000001fa9      0x149 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(sprite_alloc.o)
                                         0xd1e (size before relaxing)
- .debug_str     0x00000000000020e9       0xed C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(trig.o)
+ .debug_str     0x00000000000020f2       0xed C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(trig.o)
                                         0x707 (size before relaxing)
- .debug_str     0x00000000000021d6      0x13f C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(sprite.o)
+ .debug_str     0x00000000000021df      0x13f C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(sprite.o)
                                         0xd20 (size before relaxing)
- .debug_str     0x0000000000002315       0xbf C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(keys.o)
+ .debug_str     0x000000000000231e       0xbf C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(keys.o)
                                         0x8aa (size before relaxing)
- .debug_str     0x00000000000023d4      0x6ba C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(initSystem.o)
+ .debug_str     0x00000000000023dd      0x6ba C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(initSystem.o)
                                        0x12a3 (size before relaxing)
- .debug_str     0x0000000000002a8e       0x71 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(timeSupport.o)
+ .debug_str     0x0000000000002a97       0x71 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(timeSupport.o)
                                         0x6a9 (size before relaxing)
- .debug_str     0x0000000000002aff       0x72 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(securearea.o)
+ .debug_str     0x0000000000002b08       0x72 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(securearea.o)
                                         0x153 (size before relaxing)
- .debug_str     0x0000000000002b71      0x179 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(interrupts.o)
+ .debug_str     0x0000000000002b7a      0x179 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(interrupts.o)
                                         0x4dd (size before relaxing)
- .debug_str     0x0000000000002cea      0x1cd C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(libnds_exit.arm.o)
+ .debug_str     0x0000000000002cf3      0x1cd C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(libnds_exit.arm.o)
                                         0x873 (size before relaxing)
- .debug_str     0x0000000000002eb7      0x4a2 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(fifosystem.o)
+ .debug_str     0x0000000000002ec0      0x4a2 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(fifosystem.o)
                                         0xd27 (size before relaxing)
- .debug_str     0x0000000000003359       0x63 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(dcache.o)
+ .debug_str     0x0000000000003362       0x63 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(dcache.o)
                                          0xaa (size before relaxing)
- .debug_str     0x00000000000033bc       0x61 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(mpu_setup.o)
+ .debug_str     0x00000000000033c5       0x61 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(mpu_setup.o)
                                          0xb4 (size before relaxing)
- .debug_str     0x000000000000341d       0x60 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(IntrWait.o)
+ .debug_str     0x0000000000003426       0x60 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(IntrWait.o)
                                          0xb3 (size before relaxing)
- .debug_str     0x000000000000347d       0x61 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(cpu_clock.o)
+ .debug_str     0x0000000000003486       0x61 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(cpu_clock.o)
                                          0xb4 (size before relaxing)
- .debug_str     0x00000000000034de       0x66 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(interruptDispatcher.o)
+ .debug_str     0x00000000000034e7       0x66 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(interruptDispatcher.o)
                                          0xb9 (size before relaxing)
- .debug_str     0x0000000000003544       0x5f C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(swiSoftReset.o)
+ .debug_str     0x000000000000354d       0x5f C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(swiSoftReset.o)
                                          0xb2 (size before relaxing)
- .debug_str     0x00000000000035a3      0x548 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(video.o)
+ .debug_str     0x00000000000035ac      0x548 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(video.o)
                                         0xc55 (size before relaxing)
- .debug_str     0x0000000000003aeb      0x35f C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(system.o)
+ .debug_str     0x0000000000003af4      0x35f C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(system.o)
                                         0xc41 (size before relaxing)
- .debug_str     0x0000000000003e4a       0x5c C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(biosCalls.o)
+ .debug_str     0x0000000000003e53       0x5c C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(biosCalls.o)
                                          0xaf (size before relaxing)
 
-.debug_loc      0x0000000000000000     0x4902
+.debug_loc      0x0000000000000000     0x48fc
  *(.debug_loc)
- .debug_loc     0x0000000000000000      0x98a main.o
- .debug_loc     0x000000000000098a      0x475 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(background.o)
- .debug_loc     0x0000000000000dff       0xb3 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(touch.o)
- .debug_loc     0x0000000000000eb2      0x7fe C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(sprite_alloc.o)
- .debug_loc     0x00000000000016b0      0x922 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(trig.o)
- .debug_loc     0x0000000000001fd2      0x902 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(sprite.o)
- .debug_loc     0x00000000000028d4       0x15 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(keys.o)
- .debug_loc     0x00000000000028e9       0xf0 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(initSystem.o)
- .debug_loc     0x00000000000029d9       0x25 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(timeSupport.o)
- .debug_loc     0x00000000000029fe      0x26c C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(interrupts.o)
- .debug_loc     0x0000000000002c6a       0x64 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(libnds_exit.arm.o)
- .debug_loc     0x0000000000002cce     0x1710 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(fifosystem.o)
- .debug_loc     0x00000000000043de      0x2e5 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(video.o)
- .debug_loc     0x00000000000046c3      0x23f C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(system.o)
+ .debug_loc     0x0000000000000000      0x984 main.o
+ .debug_loc     0x0000000000000984      0x475 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(background.o)
+ .debug_loc     0x0000000000000df9       0xb3 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(touch.o)
+ .debug_loc     0x0000000000000eac      0x7fe C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(sprite_alloc.o)
+ .debug_loc     0x00000000000016aa      0x922 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(trig.o)
+ .debug_loc     0x0000000000001fcc      0x902 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(sprite.o)
+ .debug_loc     0x00000000000028ce       0x15 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(keys.o)
+ .debug_loc     0x00000000000028e3       0xf0 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(initSystem.o)
+ .debug_loc     0x00000000000029d3       0x25 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(timeSupport.o)
+ .debug_loc     0x00000000000029f8      0x26c C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(interrupts.o)
+ .debug_loc     0x0000000000002c64       0x64 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(libnds_exit.arm.o)
+ .debug_loc     0x0000000000002cc8     0x1710 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(fifosystem.o)
+ .debug_loc     0x00000000000043d8      0x2e5 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(video.o)
+ .debug_loc     0x00000000000046bd      0x23f C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(system.o)
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -2197,22 +2197,22 @@ LOAD c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/de
 LOAD c:/users/ignasi/desktop/sdk_nintendods_vscode_mini-ide/ndside/msys64/opt/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/8.3.0/thumb/crtn.o
 OUTPUT(C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/ProgramacioConsolesDS/mole_killer/mole_killer.elf elf32-littlearm)
 
-.debug_ranges   0x0000000000000000      0xd10
- .debug_ranges  0x0000000000000000      0x238 main.o
- .debug_ranges  0x0000000000000238       0xe8 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(background.o)
- .debug_ranges  0x0000000000000320       0x60 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(touch.o)
- .debug_ranges  0x0000000000000380       0x98 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(sprite_alloc.o)
- .debug_ranges  0x0000000000000418       0x98 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(trig.o)
- .debug_ranges  0x00000000000004b0       0xb0 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(sprite.o)
- .debug_ranges  0x0000000000000560       0x58 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(keys.o)
- .debug_ranges  0x00000000000005b8       0x10 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(initSystem.o)
- .debug_ranges  0x00000000000005c8       0x10 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(timeSupport.o)
- .debug_ranges  0x00000000000005d8      0x100 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(interrupts.o)
- .debug_ranges  0x00000000000006d8       0x18 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(libnds_exit.arm.o)
- .debug_ranges  0x00000000000006f0      0x440 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(fifosystem.o)
- .debug_ranges  0x0000000000000b30       0x30 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(dcache.o)
- .debug_ranges  0x0000000000000b60       0x28 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(mpu_setup.o)
- .debug_ranges  0x0000000000000b88       0x20 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(IntrWait.o)
- .debug_ranges  0x0000000000000ba8       0x50 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(video.o)
- .debug_ranges  0x0000000000000bf8       0x58 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(system.o)
- .debug_ranges  0x0000000000000c50       0xc0 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(biosCalls.o)
+.debug_ranges   0x0000000000000000      0xcd8
+ .debug_ranges  0x0000000000000000      0x200 main.o
+ .debug_ranges  0x0000000000000200       0xe8 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(background.o)
+ .debug_ranges  0x00000000000002e8       0x60 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(touch.o)
+ .debug_ranges  0x0000000000000348       0x98 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(sprite_alloc.o)
+ .debug_ranges  0x00000000000003e0       0x98 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(trig.o)
+ .debug_ranges  0x0000000000000478       0xb0 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(sprite.o)
+ .debug_ranges  0x0000000000000528       0x58 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(keys.o)
+ .debug_ranges  0x0000000000000580       0x10 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(initSystem.o)
+ .debug_ranges  0x0000000000000590       0x10 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(timeSupport.o)
+ .debug_ranges  0x00000000000005a0      0x100 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(interrupts.o)
+ .debug_ranges  0x00000000000006a0       0x18 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(libnds_exit.arm.o)
+ .debug_ranges  0x00000000000006b8      0x440 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(fifosystem.o)
+ .debug_ranges  0x0000000000000af8       0x30 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(dcache.o)
+ .debug_ranges  0x0000000000000b28       0x28 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(mpu_setup.o)
+ .debug_ranges  0x0000000000000b50       0x20 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(IntrWait.o)
+ .debug_ranges  0x0000000000000b70       0x50 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(video.o)
+ .debug_ranges  0x0000000000000bc0       0x58 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(system.o)
+ .debug_ranges  0x0000000000000c18       0xc0 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/lib\libnds9.a(biosCalls.o)

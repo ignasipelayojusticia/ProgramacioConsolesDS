@@ -7,7 +7,6 @@
 #include <background.h>
 #include <scoreScreen.h>
 
-#define FRAMES_PER_ANIMATION 3
 #define MOLES_BUFFER_SIZE 6
 #define SCORE_DIGITS 2
 #define SCORE_X_INITIAL_POSITION 170
@@ -17,7 +16,6 @@ enum {SCREEN_TOP = 0, SCREEN_BOTTOM = 192, SCREEN_LEFT = 0, SCREEN_RIGHT = 256};
 
 typedef struct 
 {
-	int id;
 	int x;
 	int y;
 
@@ -40,7 +38,7 @@ typedef struct
 	u8* frame_gfx;
 
 	int anim_frame;
-}Score;
+} Score;
 
 
 touchPosition touch;
@@ -132,9 +130,8 @@ void animateScore(const int& value, Score *score)
 
 void initMole(const int& id, Mole *mole, u8* gfx)
 {
-	mole->id = id;
-	mole->x = 256;
-	mole->y = 192;
+	mole->x = (26 + 85 * id) % 256;
+	mole->y = 60 + 80 * (id / 3);
 
 	mole->sprite_gfx_mem = oamAllocateGfx(&oamSub, SpriteSize_32x32, SpriteColorFormat_256Color);
 	mole->frame_gfx = (u8*)gfx;
@@ -145,17 +142,11 @@ void initMole(const int& id, Mole *mole, u8* gfx)
 
 void animateMole(Mole *mole)
 {
-	int frame = mole->anim_frame + mole->state * FRAMES_PER_ANIMATION;
-	u8* offset = mole->frame_gfx + frame * 32*32;
+	mole->anim_frame = 0;
 
-	dmaCopy(offset, mole->sprite_gfx_mem, 32*32);
-	
 	mole->timeToSpawn--;
 	if(mole->timeToSpawn <= 0 && mole->timeOnScreen <= 0)
 	{
-		mole->x = (26 + 85 * mole->id) % 256;
-		mole->y = 60 + 80 * (mole->id / 3);
-
 		mole->timeOnScreen = 45 + (rand() & 30);
 	}
 	else if(mole->timeToSpawn <= 0)
@@ -163,22 +154,26 @@ void animateMole(Mole *mole)
 		mole->timeOnScreen--;
 		if(mole->timeOnScreen <= 0)
 		{
-			mole->x = 256;
-			mole->y = 192;
-
 			mole->timeToSpawn = 100 + (rand() & 0xAF);
 		}
+		else
+		{
+			mole->anim_frame = 1;
+		}
 	}
+
+	u8* offset = mole->frame_gfx + mole->anim_frame * 32*32;
+	dmaCopy(offset, mole->sprite_gfx_mem, 32*32);
 }
 
 
 void checkCollisionWithMole(Mole *mole, touchPosition touch)
 {
-	if(touch.px >= mole->x && touch.px <= mole->x + 32 && touch.py >= mole->y && touch.py <= mole->y + 32)
+	if(mole->anim_frame == 1 && touch.px >= mole->x && touch.px <= mole->x + 32 && 
+		touch.py >= mole->y && touch.py <= mole->y + 32)
 	{
-		mole->x = 256;
-		mole->y = 192;
-
+		mole->timeOnScreen = 0;
+		mole->timeToSpawn = 100 + (rand() & 0xAF);
 
 		score++;
 		if(score >= 100)
