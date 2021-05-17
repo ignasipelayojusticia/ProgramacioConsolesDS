@@ -1,9 +1,9 @@
 
-//{{BLOCK(background)
+//{{BLOCK(scoreScreen)
 
 //======================================================================
 //
-//	background, 256x192@8, 
+//	scoreScreen, 256x192@8, 
 //	+ palette 256 entries, not compressed
 //	+ bitmap not compressed
 //	Total size: 512 + 49152 = 49664
@@ -14,15 +14,15 @@
 //
 //======================================================================
 
-#ifndef GRIT_BACKGROUND_H
-#define GRIT_BACKGROUND_H
+#ifndef GRIT_SCORESCREEN_H
+#define GRIT_SCORESCREEN_H
 
-#define backgroundBitmapLen 49152
-extern const unsigned int backgroundBitmap[12288];
+#define scoreScreenBitmapLen 49152
+extern const unsigned int scoreScreenBitmap[12288];
 
-#define backgroundPalLen 512
-extern const unsigned short backgroundPal[256];
+#define scoreScreenPalLen 512
+extern const unsigned short scoreScreenPal[256];
 
-#endif // GRIT_BACKGROUND_H
+#endif // GRIT_SCORESCREEN_H
 
-//}}BLOCK(background)
+//}}BLOCK(scoreScreen)

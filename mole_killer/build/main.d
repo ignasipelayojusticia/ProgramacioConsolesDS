@@ -60,8 +60,10 @@ main.o: \
  C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/include/nds/arm9/video.h \
  C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/include/nds/arm9/videoGL.h \
  C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/include/nds/arm9/nand.h \
+ C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/ProgramacioConsolesDS/mole_killer/build/score.h \
  C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/ProgramacioConsolesDS/mole_killer/build/mole.h \
- C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/ProgramacioConsolesDS/mole_killer/build/background.h
+ C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/ProgramacioConsolesDS/mole_killer/build/background.h \
+ C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/ProgramacioConsolesDS/mole_killer/build/scoreScreen.h
 
 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/include/nds.h:
 
@@ -183,6 +185,10 @@ C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitp
 
 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/msys64/opt/devkitpro/libnds/include/nds/arm9/nand.h:
 
+C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/ProgramacioConsolesDS/mole_killer/build/score.h:
+
 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/ProgramacioConsolesDS/mole_killer/build/mole.h:
 
 C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/ProgramacioConsolesDS/mole_killer/build/background.h:
+
+C:/Users/Ignasi/Desktop/SDK_NintendoDS_VSCode_Mini-IDE/ndside/ProgramacioConsolesDS/mole_killer/build/scoreScreen.h:

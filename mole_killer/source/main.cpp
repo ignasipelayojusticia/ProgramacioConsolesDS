@@ -2,11 +2,16 @@
 #include <nds.h>
 #include <stdio.h>
 
+#include <score.h>
 #include <mole.h>
 #include <background.h>
+#include <scoreScreen.h>
 
 #define FRAMES_PER_ANIMATION 3
 #define MOLES_BUFFER_SIZE 6
+#define SCORE_DIGITS 2
+#define SCORE_X_INITIAL_POSITION 170
+#define SCORE_Y_INITIAL_POSITION 93
 
 enum {SCREEN_TOP = 0, SCREEN_BOTTOM = 192, SCREEN_LEFT = 0, SCREEN_RIGHT = 256};
 
@@ -26,12 +31,29 @@ typedef struct
 	float timeOnScreen;
 } Mole;
 
+typedef struct 
+{
+	int x;
+	int y;
+
+	u16* sprite_gfx_mem;
+	u8* frame_gfx;
+
+	int anim_frame;
+}Score;
+
+
 touchPosition touch;
 bool playing;
+int score;
+int hundreds;
 
 Mole moles[MOLES_BUFFER_SIZE];
+Score scores[SCORE_DIGITS];
 
 void init();
+void initScore(const int& posX, Score *score, u8* gfx);
+void animateScore(const int& value, Score *score);
 void initMole(const int& id, Mole *mole, u8* gfx);
 void animateMole(Mole *mole);
 void checkCollisionWithMole(Mole *mole, touchPosition touch);
@@ -56,6 +78,7 @@ int main(void)
 void init()
 {
 	playing = true;
+	score = 0;
 
 	videoSetMode(MODE_5_2D);
 	videoSetModeSub(MODE_3_2D);
@@ -68,23 +91,50 @@ void init()
 	oamInit(&oamMain, SpriteMapping_1D_128, false);
 	oamInit(&oamSub, SpriteMapping_1D_128, false);
 
-	int bg3 = bgInitSub(3, BgType_Bmp8, BgSize_B8_256x256, 0, 0);
-	dmaCopy(backgroundBitmap, bgGetGfxPtr(bg3), 256*192);
+	int mainBackground = bgInit(3, BgType_Bmp8, BgSize_B8_256x256, 0, 0);
+	dmaCopy(scoreScreenBitmap, bgGetGfxPtr(mainBackground), 256*192);
+	dmaCopy(scoreScreenPal, BG_PALETTE, 256*2);
+
+	int subBackground = bgInitSub(3, BgType_Bmp8, BgSize_B8_256x256, 0, 0);
+	dmaCopy(backgroundBitmap, bgGetGfxPtr(subBackground), 256*192);
 	dmaCopy(backgroundPal, BG_PALETTE_SUB, 256*2);
+
+	for(int i = 0; i < SCORE_DIGITS; i++)
+	{
+		initScore(SCORE_X_INITIAL_POSITION + i * 32, &scores[i], (u8*)scoreTiles);
+	}
+	dmaCopy(scorePal, SPRITE_PALETTE, 512);
 
 	for(int i = 0; i < MOLES_BUFFER_SIZE; i++)
 	{
 		initMole(i, &moles[i], (u8*)moleTiles);
 	}
-
 	dmaCopy(molePal, SPRITE_PALETTE_SUB, 512);
+}
+
+void initScore(const int& posX, Score *score, u8* gfx)
+{
+	score->x = posX;
+	score->y = SCORE_Y_INITIAL_POSITION;
+
+	score->anim_frame = 0;
+
+	score->sprite_gfx_mem = oamAllocateGfx(&oamMain, SpriteSize_32x32, SpriteColorFormat_256Color);
+	score->frame_gfx = (u8*)gfx;
+}
+
+void animateScore(const int& value, Score *score)
+{
+	u8* offset = score->frame_gfx + value * 32*32;
+
+	dmaCopy(offset, score->sprite_gfx_mem, 32*32);
 }
 
 void initMole(const int& id, Mole *mole, u8* gfx)
 {
 	mole->id = id;
-	mole->x = 256; //(26 + 85 * id) % 256;
-	mole->y = 192; //60 + 80 * (id / 3);
+	mole->x = 256;
+	mole->y = 192;
 
 	mole->sprite_gfx_mem = oamAllocateGfx(&oamSub, SpriteSize_32x32, SpriteColorFormat_256Color);
 	mole->frame_gfx = (u8*)gfx;
@@ -106,7 +156,6 @@ void animateMole(Mole *mole)
 		mole->x = (26 + 85 * mole->id) % 256;
 		mole->y = 60 + 80 * (mole->id / 3);
 
-		//mole->timeToSpawn = 100 + (rand() & 0xAF);
 		mole->timeOnScreen = 45 + (rand() & 30);
 	}
 	else if(mole->timeToSpawn <= 0)
@@ -131,7 +180,11 @@ void checkCollisionWithMole(Mole *mole, touchPosition touch)
 		mole->y = 192;
 
 
-		// Puntuación ++
+		score++;
+		if(score >= 100)
+		{
+			//gameover
+		}
 	}
 }
 
@@ -150,7 +203,16 @@ void step()
 		playing = false;
 		return;
 	}
-		
+	
+	animateScore(score/10, &scores[0]);
+	animateScore(score - (score/10) * 10, &scores[1]);
+
+	for(int i = 0; i < SCORE_DIGITS; i++)
+	{
+		oamSet(&oamMain, i , scores[i].x, scores[i].y, 0, 0, SpriteSize_32x32, SpriteColorFormat_256Color, 
+			scores[i].sprite_gfx_mem, -1, false, false, false, false, false);
+	}
+
 	for(int i = 0; i < MOLES_BUFFER_SIZE; i++)
 	{
 		animateMole(&moles[i]);

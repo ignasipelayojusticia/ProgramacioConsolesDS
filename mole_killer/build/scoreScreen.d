@@ -1,0 +1,1 @@
+scoreScreen.o: scoreScreen.s
