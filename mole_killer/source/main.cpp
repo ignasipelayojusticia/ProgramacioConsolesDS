@@ -1,4 +1,3 @@
-
 #include <nds.h>
 #include <stdio.h>
 
@@ -14,44 +13,31 @@
 
 enum {SCREEN_TOP = 0, SCREEN_BOTTOM = 192, SCREEN_LEFT = 0, SCREEN_RIGHT = 256};
 
-typedef struct 
+typedef struct
 {
-	int x;
-	int y;
-
-	u16* sprite_gfx_mem;
-	u8* frame_gfx;
-
-	int state;
+	int x, y;
 	int anim_frame;
 
+	u8* frame_gfx;
+	u16* sprite_gfx_mem;
+} Sprite;
+
+struct Mole : Sprite
+{
 	float timeToSpawn;
 	float timeOnScreen;
-} Mole;
-
-typedef struct 
-{
-	int x;
-	int y;
-
-	u16* sprite_gfx_mem;
-	u8* frame_gfx;
-
-	int anim_frame;
-} Score;
-
+};
 
 touchPosition touch;
 bool playing;
 int score;
-int hundreds;
 
 Mole moles[MOLES_BUFFER_SIZE];
-Score scores[SCORE_DIGITS];
+Sprite scores[SCORE_DIGITS];
 
 void init();
-void initScore(const int& posX, Score *score, u8* gfx);
-void animateScore(const int& value, Score *score);
+void initScore(const int& posX, Sprite *score, u8* gfx);
+void animateScore(const int& value, Sprite *score);
 void initMole(const int& id, Mole *mole, u8* gfx);
 void animateMole(Mole *mole);
 void checkCollisionWithMole(Mole *mole, touchPosition touch);
@@ -110,7 +96,7 @@ void init()
 	dmaCopy(molePal, SPRITE_PALETTE_SUB, 512);
 }
 
-void initScore(const int& posX, Score *score, u8* gfx)
+void initScore(const int& posX, Sprite *score, u8* gfx)
 {
 	score->x = posX;
 	score->y = SCORE_Y_INITIAL_POSITION;
@@ -121,7 +107,7 @@ void initScore(const int& posX, Score *score, u8* gfx)
 	score->frame_gfx = (u8*)gfx;
 }
 
-void animateScore(const int& value, Score *score)
+void animateScore(const int& value, Sprite *score)
 {
 	u8* offset = score->frame_gfx + value * 32*32;
 
@@ -176,9 +162,9 @@ void checkCollisionWithMole(Mole *mole, touchPosition touch)
 		mole->timeToSpawn = 100 + (rand() & 0xAF);
 
 		score++;
-		if(score >= 100)
+		if(score > 99)
 		{
-			//gameover
+			score = 0
 		}
 	}
 }
@@ -228,8 +214,5 @@ void step()
 		{
 			checkCollisionWithMole(&moles[i], touch);
 		}
-		
-		iprintf("\x1b[10;0Hx = %04i - %04i\n", touch.rawx, touch.px);
-		iprintf("y = %04i - %04i\n", touch.rawy, touch.py);
 	}
 }
